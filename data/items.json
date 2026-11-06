@@ -1,0 +1,3856 @@
+{
+  "item_abyssal_blade": {
+    "components": [
+      "item_basher",
+      "item_sange"
+    ],
+    "cost": 6250,
+    "id": 208,
+    "name": "Abyssal Blade",
+    "quality": "epic"
+  },
+  "item_aegis": {
+    "components": [],
+    "cost": 0,
+    "id": 117,
+    "name": "Aegis of the Immortal",
+    "quality": "artifact"
+  },
+  "item_aeon_disk": {
+    "components": [
+      "item_vitality_booster",
+      "item_energy_booster"
+    ],
+    "cost": 3000,
+    "id": 256,
+    "name": "Aeon Disk",
+    "quality": "epic"
+  },
+  "item_aether_lens": {
+    "components": [
+      "item_energy_booster",
+      "item_void_stone"
+    ],
+    "cost": 2275,
+    "id": 232,
+    "name": "Aether Lens",
+    "quality": "rare"
+  },
+  "item_aghanims_shard": {
+    "components": [],
+    "cost": 1400,
+    "id": 609,
+    "name": "Aghanim's Shard",
+    "quality": "rare"
+  },
+  "item_aghanims_shard_roshan": {
+    "components": [],
+    "cost": 1400,
+    "id": 725,
+    "name": "Aghanim's Shard - Consumable",
+    "quality": "rare"
+  },
+  "item_ancient_guardian": {
+    "components": [],
+    "cost": 0,
+    "id": 1156,
+    "name": "Ancient Guardian",
+    "quality": ""
+  },
+  "item_ancient_janggo": {
+    "components": [
+      "item_headdress",
+      "item_belt_of_strength",
+      "item_wind_lace"
+    ],
+    "cost": 1625,
+    "id": 185,
+    "name": "Drum of Endurance",
+    "quality": "rare"
+  },
+  "item_angels_demise": {
+    "components": [
+      "item_phylactery",
+      "item_soul_booster"
+    ],
+    "cost": 5600,
+    "id": 1808,
+    "name": "Khanda",
+    "quality": "common"
+  },
+  "item_apex": {
+    "components": [],
+    "cost": 0,
+    "id": 366,
+    "name": "Apex",
+    "quality": ""
+  },
+  "item_arcane_blink": {
+    "components": [
+      "item_blink",
+      "item_mystic_staff"
+    ],
+    "cost": 6800,
+    "id": 604,
+    "name": "Arcane Blink",
+    "quality": "component"
+  },
+  "item_arcane_boots": {
+    "components": [
+      "item_boots",
+      "item_ring_of_basilius",
+      "item_wizard_hat"
+    ],
+    "cost": 1500,
+    "id": 180,
+    "name": "Arcane Boots",
+    "quality": "rare"
+  },
+  "item_arcane_ring": {
+    "components": [],
+    "cost": 0,
+    "id": 349,
+    "name": "Arcane Ring",
+    "quality": ""
+  },
+  "item_armlet": {
+    "components": [
+      "item_helm_of_iron_will",
+      "item_gloves",
+      "item_blades_of_attack"
+    ],
+    "cost": 2500,
+    "id": 151,
+    "name": "Armlet of Mordiggian",
+    "quality": "epic"
+  },
+  "item_ascetic_cap": {
+    "components": [],
+    "cost": 0,
+    "id": 825,
+    "name": "Ascetic's Cap",
+    "quality": ""
+  },
+  "item_ash_legion_shield": {
+    "components": [],
+    "cost": 0,
+    "id": 1717,
+    "name": "Ash Legion Shield",
+    "quality": ""
+  },
+  "item_assault": {
+    "components": [
+      "item_buckler",
+      "item_hyperstone",
+      "item_platemail"
+    ],
+    "cost": 5125,
+    "id": 112,
+    "name": "Assault Cuirass",
+    "quality": "epic"
+  },
+  "item_avianas_feather": {
+    "components": [],
+    "cost": 0,
+    "id": 1160,
+    "name": "Aviana's Feather",
+    "quality": ""
+  },
+  "item_ballista": {
+    "components": [],
+    "cost": 0,
+    "id": 367,
+    "name": "Ballista",
+    "quality": ""
+  },
+  "item_basher": {
+    "components": [
+      "item_mithril_hammer",
+      "item_belt_of_strength"
+    ],
+    "cost": 2875,
+    "id": 143,
+    "name": "Skull Basher",
+    "quality": "epic"
+  },
+  "item_belt_of_strength": {
+    "components": [],
+    "cost": 450,
+    "id": 17,
+    "name": "Belt of Strength",
+    "quality": "component"
+  },
+  "item_bfury": {
+    "components": [
+      "item_pers",
+      "item_broadsword",
+      "item_broadsword",
+      "item_quelling_blade"
+    ],
+    "cost": 3900,
+    "id": 145,
+    "name": "Battle Fury",
+    "quality": "epic"
+  },
+  "item_black_grimoire": {
+    "components": [],
+    "cost": 0,
+    "id": 1440,
+    "name": "Black Grimoire\\n(Warlock)",
+    "quality": ""
+  },
+  "item_black_king_bar": {
+    "components": [
+      "item_mithril_hammer",
+      "item_ogre_axe"
+    ],
+    "cost": 4050,
+    "id": 116,
+    "name": "Black King Bar",
+    "quality": "epic"
+  },
+  "item_black_powder_bag": {
+    "components": [],
+    "cost": 0,
+    "id": 834,
+    "name": "Blast Rig",
+    "quality": ""
+  },
+  "item_blade_mail": {
+    "components": [
+      "item_broadsword",
+      "item_splintmail"
+    ],
+    "cost": 2400,
+    "id": 127,
+    "name": "Blade Mail",
+    "quality": "epic"
+  },
+  "item_blade_of_alacrity": {
+    "components": [],
+    "cost": 1000,
+    "id": 22,
+    "name": "Blade of Alacrity",
+    "quality": "component"
+  },
+  "item_blades_of_attack": {
+    "components": [],
+    "cost": 450,
+    "id": 2,
+    "name": "Blades of Attack",
+    "quality": "component"
+  },
+  "item_blight_stone": {
+    "components": [],
+    "cost": 300,
+    "id": 240,
+    "name": "Orb of Blight",
+    "quality": "component"
+  },
+  "item_blink": {
+    "components": [],
+    "cost": 2250,
+    "id": 1,
+    "name": "Blink Dagger",
+    "quality": "component"
+  },
+  "item_blitz_knuckles": {
+    "components": [],
+    "cost": 1000,
+    "id": 485,
+    "name": "Blitz Knuckles",
+    "quality": "component"
+  },
+  "item_blood_grenade": {
+    "components": [],
+    "cost": 50,
+    "id": 1123,
+    "name": "Blood Grenade",
+    "quality": "consumable"
+  },
+  "item_bloodstone": {
+    "components": [
+      "item_veil_of_discord",
+      "item_soul_booster"
+    ],
+    "cost": 4700,
+    "id": 121,
+    "name": "Bloodstone",
+    "quality": "epic"
+  },
+  "item_bloodthorn": {
+    "components": [
+      "item_orchid",
+      "item_oblivion_staff",
+      "item_javelin"
+    ],
+    "cost": 6400,
+    "id": 250,
+    "name": "Bloodthorn",
+    "quality": "epic"
+  },
+  "item_book_of_shadows": {
+    "components": [],
+    "cost": 0,
+    "id": 677,
+    "name": "Book of Shadows",
+    "quality": ""
+  },
+  "item_boots": {
+    "components": [],
+    "cost": 500,
+    "id": 29,
+    "name": "Boots of Speed",
+    "quality": "component"
+  },
+  "item_boots_of_bearing": {
+    "components": [
+      "item_tranquil_boots",
+      "item_ancient_janggo",
+      "item_ring_of_tarrasque"
+    ],
+    "cost": 4225,
+    "id": 931,
+    "name": "Boots of Bearing",
+    "quality": "rare"
+  },
+  "item_boots_of_elves": {
+    "components": [],
+    "cost": 450,
+    "id": 18,
+    "name": "Band of Elvenskin",
+    "quality": "component"
+  },
+  "item_bottle": {
+    "components": [],
+    "cost": 675,
+    "id": 41,
+    "name": "Bottle",
+    "quality": "common"
+  },
+  "item_bracer": {
+    "components": [
+      "item_circlet",
+      "item_gauntlets"
+    ],
+    "cost": 505,
+    "id": 73,
+    "name": "Bracer",
+    "quality": "common"
+  },
+  "item_branches": {
+    "components": [],
+    "cost": 55,
+    "id": 16,
+    "name": "Iron Branch",
+    "quality": "consumable"
+  },
+  "item_broadsword": {
+    "components": [],
+    "cost": 1000,
+    "id": 3,
+    "name": "Broadsword",
+    "quality": "component"
+  },
+  "item_broom_handle": {
+    "components": [],
+    "cost": 0,
+    "id": 355,
+    "name": "Broom Handle",
+    "quality": ""
+  },
+  "item_buckler": {
+    "components": [
+      "item_ring_of_protection"
+    ],
+    "cost": 425,
+    "id": 86,
+    "name": "Buckler",
+    "quality": "rare"
+  },
+  "item_bullwhip": {
+    "components": [],
+    "cost": 0,
+    "id": 680,
+    "name": "Bullwhip",
+    "quality": ""
+  },
+  "item_butterfly": {
+    "components": [
+      "item_eagle",
+      "item_claymore",
+      "item_talisman_of_evasion"
+    ],
+    "cost": 5450,
+    "id": 139,
+    "name": "Butterfly",
+    "quality": "epic"
+  },
+  "item_ceremonial_robe": {
+    "components": [],
+    "cost": 0,
+    "id": 676,
+    "name": "Ceremonial Robe",
+    "quality": ""
+  },
+  "item_chainmail": {
+    "components": [],
+    "cost": 500,
+    "id": 4,
+    "name": "Chainmail",
+    "quality": "component"
+  },
+  "item_chasm_stone": {
+    "components": [],
+    "cost": 800,
+    "id": 1872,
+    "name": "Chasm Stone",
+    "quality": "component"
+  },
+  "item_cheese": {
+    "components": [],
+    "cost": 1000,
+    "id": 33,
+    "name": "Cheese",
+    "quality": "consumable"
+  },
+  "item_chipped_vest": {
+    "components": [],
+    "cost": 0,
+    "id": 565,
+    "name": "Chipped Vest",
+    "quality": ""
+  },
+  "item_circlet": {
+    "components": [],
+    "cost": 155,
+    "id": 20,
+    "name": "Circlet",
+    "quality": "component"
+  },
+  "item_clarity": {
+    "components": [],
+    "cost": 60,
+    "id": 38,
+    "name": "Clarity",
+    "quality": "consumable"
+  },
+  "item_claymore": {
+    "components": [],
+    "cost": 1350,
+    "id": 5,
+    "name": "Claymore",
+    "quality": "component"
+  },
+  "item_cloak": {
+    "components": [],
+    "cost": 900,
+    "id": 31,
+    "name": "Cloak",
+    "quality": "component"
+  },
+  "item_cloak_of_flames": {
+    "components": [],
+    "cost": 0,
+    "id": 574,
+    "name": "Cloak of Flames",
+    "quality": ""
+  },
+  "item_clumsy_net": {
+    "components": [],
+    "cost": 0,
+    "id": 360,
+    "name": "Clumsy Net",
+    "quality": ""
+  },
+  "item_conjurers_catalyst": {
+    "components": [],
+    "cost": 0,
+    "id": 1864,
+    "name": "Conjurer's Catalyst",
+    "quality": ""
+  },
+  "item_consecrated_wraps": {
+    "components": [
+      "item_vitality_booster",
+      "item_shawl",
+      "item_crown"
+    ],
+    "cost": 2600,
+    "id": 1854,
+    "name": "Consecrated Wraps",
+    "quality": "epic"
+  },
+  "item_cornucopia": {
+    "components": [],
+    "cost": 1200,
+    "id": 1125,
+    "name": "Cornucopia",
+    "quality": "common"
+  },
+  "item_courier": {
+    "components": [],
+    "cost": 50,
+    "id": 45,
+    "name": "Animal Courier",
+    "quality": "consumable"
+  },
+  "item_craggy_coat": {
+    "components": [],
+    "cost": 0,
+    "id": 298,
+    "name": "Craggy Coat",
+    "quality": ""
+  },
+  "item_crellas_crozier": {
+    "components": [
+      "item_ghost",
+      "item_soul_booster"
+    ],
+    "cost": 4800,
+    "id": 1856,
+    "name": "Crella's Crozier",
+    "quality": "epic"
+  },
+  "item_crimson_guard": {
+    "components": [
+      "item_vanguard",
+      "item_helm_of_iron_will"
+    ],
+    "cost": 3725,
+    "id": 242,
+    "name": "Crimson Guard",
+    "quality": "epic"
+  },
+  "item_crippling_crossbow": {
+    "components": [],
+    "cost": 0,
+    "id": 1601,
+    "name": "Crippling Crossbow",
+    "quality": ""
+  },
+  "item_crown": {
+    "components": [],
+    "cost": 450,
+    "id": 261,
+    "name": "Crown",
+    "quality": "component"
+  },
+  "item_cyclone": {
+    "components": [
+      "item_staff_of_wizardry",
+      "item_void_stone",
+      "item_wind_lace"
+    ],
+    "cost": 2600,
+    "id": 100,
+    "name": "Eul's Scepter of Divinity",
+    "quality": "rare"
+  },
+  "item_dagger_of_ristul": {
+    "components": [],
+    "cost": 0,
+    "id": 1077,
+    "name": "Dagger of Ristul",
+    "quality": ""
+  },
+  "item_dagon": {
+    "components": [
+      "item_point_booster",
+      "item_crown",
+      "item_wizard_hat"
+    ],
+    "cost": 3050,
+    "id": 104,
+    "name": "Dagon",
+    "quality": "rare"
+  },
+  "item_dagon_2": {
+    "components": [],
+    "cost": 4200,
+    "id": 201,
+    "name": "Dagon",
+    "quality": "rare"
+  },
+  "item_dagon_3": {
+    "components": [],
+    "cost": 5350,
+    "id": 202,
+    "name": "Dagon",
+    "quality": "rare"
+  },
+  "item_dagon_4": {
+    "components": [],
+    "cost": 6500,
+    "id": 203,
+    "name": "Dagon",
+    "quality": "rare"
+  },
+  "item_dagon_5": {
+    "components": [],
+    "cost": 7650,
+    "id": 204,
+    "name": "Dagon",
+    "quality": "rare"
+  },
+  "item_dandelion_amulet": {
+    "components": [],
+    "cost": 0,
+    "id": 2190,
+    "name": "Dandelion Amulet",
+    "quality": ""
+  },
+  "item_defiant_shell": {
+    "components": [],
+    "cost": 0,
+    "id": 950,
+    "name": "Defiant Shell",
+    "quality": ""
+  },
+  "item_demon_edge": {
+    "components": [],
+    "cost": 2200,
+    "id": 51,
+    "name": "Demon Edge",
+    "quality": "secret_shop"
+  },
+  "item_demonicon": {
+    "components": [],
+    "cost": 0,
+    "id": 370,
+    "name": "Book of the Dead",
+    "quality": ""
+  },
+  "item_desolator": {
+    "components": [
+      "item_mithril_hammer",
+      "item_mithril_hammer",
+      "item_blight_stone"
+    ],
+    "cost": 3500,
+    "id": 168,
+    "name": "Desolator",
+    "quality": "artifact"
+  },
+  "item_desolator_2": {
+    "components": [],
+    "cost": 0,
+    "id": 292,
+    "name": "Stygian Desolator",
+    "quality": ""
+  },
+  "item_devastator": {
+    "components": [
+      "item_witch_blade",
+      "item_mystic_staff"
+    ],
+    "cost": 5975,
+    "id": 1806,
+    "name": "Parasma",
+    "quality": "rare"
+  },
+  "item_dezun_bloodrite": {
+    "components": [],
+    "cost": 0,
+    "id": 1642,
+    "name": "Dezun Bloodrite",
+    "quality": ""
+  },
+  "item_diadem": {
+    "components": [],
+    "cost": 1000,
+    "id": 1122,
+    "name": "Diadem",
+    "quality": "component"
+  },
+  "item_diffusal_blade": {
+    "components": [
+      "item_blade_of_alacrity",
+      "item_robe"
+    ],
+    "cost": 2500,
+    "id": 174,
+    "name": "Diffusal Blade",
+    "quality": "artifact"
+  },
+  "item_diffusal_blade_2": {
+    "components": [
+      "item_diffusal_blade",
+      "item_recipe_diffusal_blade"
+    ],
+    "cost": 3850,
+    "id": 196,
+    "name": "Diffusal Blade",
+    "quality": "artifact"
+  },
+  "item_disperser": {
+    "components": [
+      "item_diffusal_blade",
+      "item_eagle"
+    ],
+    "cost": 6100,
+    "id": 1097,
+    "name": "Disperser",
+    "quality": "artifact"
+  },
+  "item_divine_regalia": {
+    "components": [],
+    "cost": 0,
+    "id": 1644,
+    "name": "Divine Regalia",
+    "quality": ""
+  },
+  "item_divine_regalia_broken": {
+    "components": [],
+    "cost": 0,
+    "id": 1645,
+    "name": "Disgraced Regalia",
+    "quality": ""
+  },
+  "item_dormant_curio": {
+    "components": [],
+    "cost": 0,
+    "id": 1638,
+    "name": "Dormant Curio",
+    "quality": ""
+  },
+  "item_doubloon": {
+    "components": [],
+    "cost": 0,
+    "id": 1803,
+    "name": "Doubloon",
+    "quality": ""
+  },
+  "item_dragon_lance": {
+    "components": [
+      "item_blade_of_alacrity",
+      "item_belt_of_strength"
+    ],
+    "cost": 1900,
+    "id": 236,
+    "name": "Dragon Lance",
+    "quality": "artifact"
+  },
+  "item_dragon_scale": {
+    "components": [],
+    "cost": 0,
+    "id": 358,
+    "name": "Dragon Scale",
+    "quality": ""
+  },
+  "item_duelist_gloves": {
+    "components": [],
+    "cost": 0,
+    "id": 2097,
+    "name": "Duelist Gloves",
+    "quality": ""
+  },
+  "item_dust": {
+    "components": [],
+    "cost": 80,
+    "id": 40,
+    "name": "Dust of Appearance",
+    "quality": "consumable"
+  },
+  "item_eagle": {
+    "components": [],
+    "cost": 2800,
+    "id": 52,
+    "name": "Eaglesong",
+    "quality": "secret_shop"
+  },
+  "item_echo_sabre": {
+    "components": [
+      "item_ogre_axe",
+      "item_broadsword",
+      "item_void_stone"
+    ],
+    "cost": 2700,
+    "id": 252,
+    "name": "Echo Sabre",
+    "quality": "artifact"
+  },
+  "item_eldwurms_edda": {
+    "components": [],
+    "cost": 0,
+    "id": 1850,
+    "name": "Eldwurm's Edda",
+    "quality": ""
+  },
+  "item_elixer": {
+    "components": [],
+    "cost": 0,
+    "id": 302,
+    "name": "Elixir",
+    "quality": ""
+  },
+  "item_elven_tunic": {
+    "components": [],
+    "cost": 0,
+    "id": 573,
+    "name": "Elven Tunic",
+    "quality": ""
+  },
+  "item_enchanted_mango": {
+    "components": [],
+    "cost": 65,
+    "id": 216,
+    "name": "Enchanted Mango",
+    "quality": "consumable"
+  },
+  "item_enchanted_quiver": {
+    "components": [],
+    "cost": 0,
+    "id": 361,
+    "name": "Enchanted Quiver",
+    "quality": ""
+  },
+  "item_enchanters_bauble": {
+    "components": [],
+    "cost": 0,
+    "id": 1862,
+    "name": "Enchanter's Bauble",
+    "quality": ""
+  },
+  "item_energy_booster": {
+    "components": [],
+    "cost": 800,
+    "id": 59,
+    "name": "Energy Booster",
+    "quality": "secret_shop"
+  },
+  "item_enhancement_alert": {
+    "components": [],
+    "cost": 0,
+    "id": 1584,
+    "name": "Alert",
+    "quality": ""
+  },
+  "item_enhancement_audacious": {
+    "components": [],
+    "cost": 0,
+    "id": 1581,
+    "name": "Audacious",
+    "quality": ""
+  },
+  "item_enhancement_boundless": {
+    "components": [],
+    "cost": 0,
+    "id": 1590,
+    "name": "Boundless",
+    "quality": ""
+  },
+  "item_enhancement_brawny": {
+    "components": [],
+    "cost": 0,
+    "id": 1585,
+    "name": "Brawny",
+    "quality": ""
+  },
+  "item_enhancement_crude": {
+    "components": [],
+    "cost": 0,
+    "id": 1589,
+    "name": "Crude",
+    "quality": ""
+  },
+  "item_enhancement_curious": {
+    "components": [],
+    "cost": 0,
+    "id": 1651,
+    "name": "Unleashed",
+    "quality": ""
+  },
+  "item_enhancement_dominant": {
+    "components": [],
+    "cost": 0,
+    "id": 1648,
+    "name": "Dominant",
+    "quality": ""
+  },
+  "item_enhancement_evolved": {
+    "components": [],
+    "cost": 0,
+    "id": 1596,
+    "name": "Evolved",
+    "quality": ""
+  },
+  "item_enhancement_feverish": {
+    "components": [],
+    "cost": 0,
+    "id": 1587,
+    "name": "Feverish",
+    "quality": ""
+  },
+  "item_enhancement_fierce": {
+    "components": [],
+    "cost": 0,
+    "id": 1647,
+    "name": "Fierce",
+    "quality": ""
+  },
+  "item_enhancement_fleetfooted": {
+    "components": [],
+    "cost": 0,
+    "id": 1588,
+    "name": "Fleetfooted",
+    "quality": ""
+  },
+  "item_enhancement_greedy": {
+    "components": [],
+    "cost": 0,
+    "id": 1593,
+    "name": "Greedy",
+    "quality": ""
+  },
+  "item_enhancement_hulking": {
+    "components": [],
+    "cost": 0,
+    "id": 1866,
+    "name": "Hulking",
+    "quality": ""
+  },
+  "item_enhancement_keen_eyed": {
+    "components": [],
+    "cost": 0,
+    "id": 1595,
+    "name": "Keen-eyed",
+    "quality": ""
+  },
+  "item_enhancement_manic": {
+    "components": [],
+    "cost": 0,
+    "id": 1867,
+    "name": "Manic",
+    "quality": ""
+  },
+  "item_enhancement_mystical": {
+    "components": [],
+    "cost": 0,
+    "id": 1583,
+    "name": "Mystical",
+    "quality": ""
+  },
+  "item_enhancement_nimble": {
+    "components": [],
+    "cost": 0,
+    "id": 1874,
+    "name": "Nimble",
+    "quality": ""
+  },
+  "item_enhancement_quickened": {
+    "components": [],
+    "cost": 0,
+    "id": 1577,
+    "name": "Quickened",
+    "quality": ""
+  },
+  "item_enhancement_restorative": {
+    "components": [],
+    "cost": 0,
+    "id": 1649,
+    "name": "Restorative",
+    "quality": ""
+  },
+  "item_enhancement_thick": {
+    "components": [],
+    "cost": 0,
+    "id": 1650,
+    "name": "Thick",
+    "quality": ""
+  },
+  "item_enhancement_timeless": {
+    "components": [],
+    "cost": 0,
+    "id": 1592,
+    "name": "Timeless",
+    "quality": ""
+  },
+  "item_enhancement_titanic": {
+    "components": [],
+    "cost": 0,
+    "id": 1597,
+    "name": "Titanic",
+    "quality": ""
+  },
+  "item_enhancement_tough": {
+    "components": [],
+    "cost": 0,
+    "id": 1586,
+    "name": "Tough",
+    "quality": ""
+  },
+  "item_enhancement_vampiric": {
+    "components": [],
+    "cost": 0,
+    "id": 1594,
+    "name": "Vampiric",
+    "quality": ""
+  },
+  "item_enhancement_vast": {
+    "components": [],
+    "cost": 0,
+    "id": 1576,
+    "name": "Vast",
+    "quality": ""
+  },
+  "item_enhancement_vital": {
+    "components": [],
+    "cost": 0,
+    "id": 1865,
+    "name": "Vital",
+    "quality": ""
+  },
+  "item_enhancement_wise": {
+    "components": [],
+    "cost": 0,
+    "id": 1591,
+    "name": "Wise",
+    "quality": ""
+  },
+  "item_essence_distiller": {
+    "components": [
+      "item_urn_of_shadows",
+      "item_chainmail",
+      "item_wizard_hat"
+    ],
+    "cost": 1775,
+    "id": 1852,
+    "name": "Essence Distiller",
+    "quality": "rare"
+  },
+  "item_essence_ring": {
+    "components": [],
+    "cost": 0,
+    "id": 359,
+    "name": "Essence Ring",
+    "quality": ""
+  },
+  "item_eternal_shroud": {
+    "components": [
+      "item_cloak",
+      "item_ogre_axe",
+      "item_vitality_booster"
+    ],
+    "cost": 3900,
+    "id": 692,
+    "name": "Eternal Shroud",
+    "quality": "epic"
+  },
+  "item_ethereal_blade": {
+    "components": [
+      "item_ultimate_orb",
+      "item_ghost"
+    ],
+    "cost": 5200,
+    "id": 176,
+    "name": "Ethereal Blade",
+    "quality": "epic"
+  },
+  "item_ex_machina": {
+    "components": [],
+    "cost": 0,
+    "id": 374,
+    "name": "Ex Machina",
+    "quality": ""
+  },
+  "item_eye_of_the_vizier": {
+    "components": [],
+    "cost": 0,
+    "id": 990,
+    "name": "Eye of the Vizier",
+    "quality": ""
+  },
+  "item_faded_broach": {
+    "components": [],
+    "cost": 0,
+    "id": 375,
+    "name": "Faded Broach",
+    "quality": ""
+  },
+  "item_faerie_fire": {
+    "components": [],
+    "cost": 65,
+    "id": 237,
+    "name": "Faerie Fire",
+    "quality": "consumable"
+  },
+  "item_falcon_blade": {
+    "components": [
+      "item_blades_of_attack",
+      "item_fluffy_hat",
+      "item_sobi_mask"
+    ],
+    "cost": 1125,
+    "id": 596,
+    "name": "Falcon Blade",
+    "quality": "rare"
+  },
+  "item_fallen_sky": {
+    "components": [],
+    "cost": 0,
+    "id": 371,
+    "name": "Fallen Sky",
+    "quality": ""
+  },
+  "item_famango": {
+    "components": [],
+    "cost": 0,
+    "id": 4204,
+    "name": "Healing Lotus",
+    "quality": "consumable"
+  },
+  "item_flask": {
+    "components": [],
+    "cost": 100,
+    "id": 39,
+    "name": "Healing Salve",
+    "quality": "consumable"
+  },
+  "item_flayers_bota": {
+    "components": [],
+    "cost": 0,
+    "id": 1721,
+    "name": "Flayer's Bota",
+    "quality": ""
+  },
+  "item_flicker": {
+    "components": [],
+    "cost": 0,
+    "id": 335,
+    "name": "Flicker",
+    "quality": ""
+  },
+  "item_fluffy_hat": {
+    "components": [],
+    "cost": 250,
+    "id": 593,
+    "name": "Fluffy Hat",
+    "quality": "secret_shop"
+  },
+  "item_flying_courier": {
+    "components": [],
+    "cost": 100,
+    "id": 286,
+    "name": "Flying Courier",
+    "quality": "consumable"
+  },
+  "item_foragers_health": {
+    "components": [],
+    "cost": 0,
+    "id": 1869,
+    "name": "Vital Toadstool",
+    "quality": ""
+  },
+  "item_foragers_kit": {
+    "components": [],
+    "cost": 0,
+    "id": 1868,
+    "name": "Forager's Kit",
+    "quality": ""
+  },
+  "item_foragers_mana": {
+    "components": [],
+    "cost": 0,
+    "id": 1871,
+    "name": "Tomo'kan Ringcap",
+    "quality": ""
+  },
+  "item_foragers_stats": {
+    "components": [],
+    "cost": 0,
+    "id": 1870,
+    "name": "Ironwood Nut",
+    "quality": ""
+  },
+  "item_force_boots": {
+    "components": [],
+    "cost": 0,
+    "id": 291,
+    "name": "Force Boots",
+    "quality": ""
+  },
+  "item_force_field": {
+    "components": [],
+    "cost": 0,
+    "id": 829,
+    "name": "Arcanist's Armor",
+    "quality": ""
+  },
+  "item_force_staff": {
+    "components": [
+      "item_staff_of_wizardry",
+      "item_fluffy_hat"
+    ],
+    "cost": 2200,
+    "id": 102,
+    "name": "Force Staff",
+    "quality": "rare"
+  },
+  "item_furion_gold_bag": {
+    "components": [],
+    "cost": 0,
+    "id": 1652,
+    "name": "Bag of Gold",
+    "quality": ""
+  },
+  "item_fusion_rune": {
+    "components": [],
+    "cost": 0,
+    "id": 313,
+    "name": "Fusion Rune",
+    "quality": ""
+  },
+  "item_gale_guard": {
+    "components": [],
+    "cost": 0,
+    "id": 1602,
+    "name": "Gale Guard",
+    "quality": ""
+  },
+  "item_gauntlets": {
+    "components": [],
+    "cost": 140,
+    "id": 13,
+    "name": "Gauntlets of Strength",
+    "quality": "component"
+  },
+  "item_gem": {
+    "components": [],
+    "cost": 900,
+    "id": 30,
+    "name": "Gem of True Sight",
+    "quality": "component"
+  },
+  "item_ghost": {
+    "components": [],
+    "cost": 1500,
+    "id": 37,
+    "name": "Ghost Scepter",
+    "quality": "component"
+  },
+  "item_giant_maul": {
+    "components": [],
+    "cost": 0,
+    "id": 1643,
+    "name": "Giant's Maul",
+    "quality": ""
+  },
+  "item_giants_ring": {
+    "components": [],
+    "cost": 0,
+    "id": 678,
+    "name": "Giant's Ring",
+    "quality": ""
+  },
+  "item_glimmer_cape": {
+    "components": [
+      "item_shadow_amulet",
+      "item_shawl"
+    ],
+    "cost": 2150,
+    "id": 254,
+    "name": "Glimmer Cape",
+    "quality": "rare"
+  },
+  "item_gloves": {
+    "components": [],
+    "cost": 450,
+    "id": 25,
+    "name": "Gloves of Haste",
+    "quality": "component"
+  },
+  "item_gossamer_cape": {
+    "components": [],
+    "cost": 0,
+    "id": 2193,
+    "name": "Gossamer Cape",
+    "quality": ""
+  },
+  "item_great_famango": {
+    "components": [
+      "item_famango",
+      "item_famango",
+      "item_famango"
+    ],
+    "cost": 0,
+    "id": 4205,
+    "name": "Great Healing Lotus",
+    "quality": "consumable"
+  },
+  "item_greater_crit": {
+    "components": [
+      "item_lesser_crit",
+      "item_demon_edge"
+    ],
+    "cost": 5100,
+    "id": 141,
+    "name": "Daedalus",
+    "quality": "epic"
+  },
+  "item_greater_faerie_fire": {
+    "components": [],
+    "cost": 0,
+    "id": 299,
+    "name": "Greater Faerie Fire",
+    "quality": "consumable"
+  },
+  "item_greater_famango": {
+    "components": [
+      "item_great_famango",
+      "item_great_famango"
+    ],
+    "cost": 0,
+    "id": 4206,
+    "name": "Greater Healing Lotus",
+    "quality": "consumable"
+  },
+  "item_grisgris": {
+    "components": [],
+    "cost": 0,
+    "id": 1441,
+    "name": "Gris-Gris",
+    "quality": ""
+  },
+  "item_grove_bow": {
+    "components": [],
+    "cost": 0,
+    "id": 288,
+    "name": "Grove Bow",
+    "quality": ""
+  },
+  "item_guardian_greaves": {
+    "components": [
+      "item_arcane_boots",
+      "item_mekansm"
+    ],
+    "cost": 4450,
+    "id": 231,
+    "name": "Guardian Greaves",
+    "quality": "rare"
+  },
+  "item_gungir": {
+    "components": [
+      "item_rod_of_atos",
+      "item_point_booster",
+      "item_chasm_stone"
+    ],
+    "cost": 4650,
+    "id": 1466,
+    "name": "Gleipnir",
+    "quality": "artifact"
+  },
+  "item_gunpowder_gauntlets": {
+    "components": [],
+    "cost": 0,
+    "id": 1603,
+    "name": "Gunpowder Gauntlet",
+    "quality": ""
+  },
+  "item_hand_of_midas": {
+    "components": [
+      "item_gloves"
+    ],
+    "cost": 2200,
+    "id": 65,
+    "name": "Hand of Midas",
+    "quality": "common"
+  },
+  "item_harmonizer": {
+    "components": [],
+    "cost": 0,
+    "id": 1863,
+    "name": "Harmonizer",
+    "quality": ""
+  },
+  "item_harpoon": {
+    "components": [
+      "item_echo_sabre",
+      "item_diadem"
+    ],
+    "cost": 4700,
+    "id": 939,
+    "name": "Harpoon",
+    "quality": ""
+  },
+  "item_havoc_hammer": {
+    "components": [],
+    "cost": 0,
+    "id": 364,
+    "name": "Havoc Hammer",
+    "quality": ""
+  },
+  "item_headdress": {
+    "components": [
+      "item_ring_of_regen"
+    ],
+    "cost": 425,
+    "id": 94,
+    "name": "Headdress",
+    "quality": "rare"
+  },
+  "item_heart": {
+    "components": [
+      "item_reaver",
+      "item_ring_of_tarrasque"
+    ],
+    "cost": 5100,
+    "id": 114,
+    "name": "Heart of Tarrasque",
+    "quality": "epic"
+  },
+  "item_heavens_halberd": {
+    "components": [
+      "item_talisman_of_evasion",
+      "item_splintmail",
+      "item_ring_of_health"
+    ],
+    "cost": 3400,
+    "id": 210,
+    "name": "Heaven's Halberd",
+    "quality": "artifact"
+  },
+  "item_heavy_blade": {
+    "components": [],
+    "cost": 0,
+    "id": 837,
+    "name": "Witchbane",
+    "quality": ""
+  },
+  "item_helm_of_iron_will": {
+    "components": [],
+    "cost": 975,
+    "id": 6,
+    "name": "Helm of Iron Will",
+    "quality": "component"
+  },
+  "item_helm_of_the_dominator": {
+    "components": [
+      "item_helm_of_iron_will",
+      "item_crown"
+    ],
+    "cost": 2550,
+    "id": 164,
+    "name": "Helm of the Dominator",
+    "quality": "artifact"
+  },
+  "item_helm_of_the_overlord": {
+    "components": [
+      "item_helm_of_the_dominator",
+      "item_ultimate_orb"
+    ],
+    "cost": 5650,
+    "id": 635,
+    "name": "Helm of the Overlord",
+    "quality": "artifact"
+  },
+  "item_helm_of_the_undying": {
+    "components": [],
+    "cost": 0,
+    "id": 327,
+    "name": "Helm of the Undying",
+    "quality": ""
+  },
+  "item_holy_locket": {
+    "components": [
+      "item_magic_wand",
+      "item_crown"
+    ],
+    "cost": 2250,
+    "id": 269,
+    "name": "Holy Locket",
+    "quality": "rare"
+  },
+  "item_hood_of_defiance": {
+    "components": [],
+    "cost": 0,
+    "id": 131,
+    "name": "Hood of Defiance",
+    "quality": "epic"
+  },
+  "item_hurricane_pike": {
+    "components": [
+      "item_force_staff",
+      "item_dragon_lance"
+    ],
+    "cost": 4450,
+    "id": 263,
+    "name": "Hurricane Pike",
+    "quality": "epic"
+  },
+  "item_hydras_breath": {
+    "components": [
+      "item_specialists_array",
+      "item_dragon_lance",
+      "item_orb_of_venom",
+      "item_"
+    ],
+    "cost": 5900,
+    "id": 1858,
+    "name": "Hydra's Breath",
+    "quality": "rare"
+  },
+  "item_hyperstone": {
+    "components": [],
+    "cost": 2000,
+    "id": 55,
+    "name": "Hyperstone",
+    "quality": "secret_shop"
+  },
+  "item_idol_of_screeauk": {
+    "components": [],
+    "cost": 0,
+    "id": 1720,
+    "name": "Idol of Scree'auk",
+    "quality": ""
+  },
+  "item_illusionsts_cape": {
+    "components": [],
+    "cost": 0,
+    "id": 363,
+    "name": "Illusionist's Cape",
+    "quality": ""
+  },
+  "item_imp_claw": {
+    "components": [],
+    "cost": 0,
+    "id": 334,
+    "name": "Imp Claw",
+    "quality": ""
+  },
+  "item_infused_raindrop": {
+    "components": [],
+    "cost": 225,
+    "id": 265,
+    "name": "Infused Raindrops",
+    "quality": "component"
+  },
+  "item_invis_sword": {
+    "components": [
+      "item_claymore",
+      "item_blitz_knuckles",
+      "item_shadow_amulet"
+    ],
+    "cost": 3250,
+    "id": 152,
+    "name": "Shadow Blade",
+    "quality": "epic"
+  },
+  "item_iron_talon": {
+    "components": [
+      "item_quelling_blade",
+      "item_ring_of_protection"
+    ],
+    "cost": 0,
+    "id": 239,
+    "name": "Iron Talon",
+    "quality": "common"
+  },
+  "item_ironwood_tree": {
+    "components": [],
+    "cost": 0,
+    "id": 304,
+    "name": "Ironwood Tree",
+    "quality": ""
+  },
+  "item_javelin": {
+    "components": [],
+    "cost": 900,
+    "id": 7,
+    "name": "Javelin",
+    "quality": "component"
+  },
+  "item_jidi_pollen_bag": {
+    "components": [],
+    "cost": 0,
+    "id": 1640,
+    "name": "Jidi Pollen Bag",
+    "quality": ""
+  },
+  "item_kaya": {
+    "components": [
+      "item_staff_of_wizardry",
+      "item_robe"
+    ],
+    "cost": 2100,
+    "id": 259,
+    "name": "Kaya",
+    "quality": "epic"
+  },
+  "item_kaya_and_sange": {
+    "components": [
+      "item_kaya",
+      "item_sange"
+    ],
+    "cost": 4200,
+    "id": 273,
+    "name": "Kaya and Sange",
+    "quality": "artifact"
+  },
+  "item_keen_optic": {
+    "components": [],
+    "cost": 0,
+    "id": 287,
+    "name": "Keen Optic",
+    "quality": ""
+  },
+  "item_kobold_cup": {
+    "components": [],
+    "cost": 0,
+    "id": 1637,
+    "name": "Kobold Cup",
+    "quality": ""
+  },
+  "item_lance_of_pursuit": {
+    "components": [],
+    "cost": 0,
+    "id": 946,
+    "name": "Lance of Pursuit",
+    "quality": ""
+  },
+  "item_lesser_crit": {
+    "components": [
+      "item_claymore",
+      "item_blades_of_attack"
+    ],
+    "cost": 2000,
+    "id": 149,
+    "name": "Crystalys",
+    "quality": "epic"
+  },
+  "item_lifesteal": {
+    "components": [],
+    "cost": 900,
+    "id": 26,
+    "name": "Morbid Mask",
+    "quality": "component"
+  },
+  "item_light_collector": {
+    "components": [],
+    "cost": 0,
+    "id": 1167,
+    "name": "Light Collector",
+    "quality": ""
+  },
+  "item_lotus_orb": {
+    "components": [
+      "item_pers",
+      "item_platemail",
+      "item_energy_booster"
+    ],
+    "cost": 3850,
+    "id": 226,
+    "name": "Lotus Orb",
+    "quality": "epic"
+  },
+  "item_madstone_bundle": {
+    "components": [],
+    "cost": 0,
+    "id": 1609,
+    "name": "Madstone Bundle",
+    "quality": "consumable"
+  },
+  "item_maelstrom": {
+    "components": [
+      "item_mithril_hammer",
+      "item_javelin",
+      "item_gloves"
+    ],
+    "cost": 2950,
+    "id": 166,
+    "name": "Maelstrom",
+    "quality": "artifact"
+  },
+  "item_mage_slayer": {
+    "components": [
+      "item_pers",
+      "item_cloak",
+      "item_blades_of_attack",
+      "item_orb_of_venom"
+    ],
+    "cost": 3100,
+    "id": 598,
+    "name": "Mage Slayer",
+    "quality": "rare"
+  },
+  "item_magic_stick": {
+    "components": [],
+    "cost": 200,
+    "id": 34,
+    "name": "Magic Stick",
+    "quality": "component"
+  },
+  "item_magic_wand": {
+    "components": [
+      "item_magic_stick",
+      "item_branches",
+      "item_branches"
+    ],
+    "cost": 460,
+    "id": 36,
+    "name": "Magic Wand",
+    "quality": "common"
+  },
+  "item_magnifying_monocle": {
+    "components": [],
+    "cost": 0,
+    "id": 1607,
+    "name": "Magnifying Monocle",
+    "quality": ""
+  },
+  "item_mana_draught": {
+    "components": [],
+    "cost": 0,
+    "id": 1599,
+    "name": "Mana Draught",
+    "quality": ""
+  },
+  "item_mango_tree": {
+    "components": [],
+    "cost": 0,
+    "id": 328,
+    "name": "Mango Tree",
+    "quality": "consumable"
+  },
+  "item_manta": {
+    "components": [
+      "item_yasha",
+      "item_diadem"
+    ],
+    "cost": 4650,
+    "id": 147,
+    "name": "Manta Style",
+    "quality": "epic"
+  },
+  "item_mantle": {
+    "components": [],
+    "cost": 140,
+    "id": 15,
+    "name": "Mantle of Intelligence",
+    "quality": "component"
+  },
+  "item_martyrs_plate": {
+    "components": [],
+    "cost": 0,
+    "id": 2192,
+    "name": "Martyr's Plate",
+    "quality": ""
+  },
+  "item_mask_of_madness": {
+    "components": [
+      "item_broadsword",
+      "item_lifesteal"
+    ],
+    "cost": 1900,
+    "id": 172,
+    "name": "Mask of Madness",
+    "quality": "artifact"
+  },
+  "item_medallion_of_courage": {
+    "components": [
+      "item_chainmail",
+      "item_sobi_mask",
+      "item_blight_stone"
+    ],
+    "cost": 0,
+    "id": 187,
+    "name": "Medallion of Courage",
+    "quality": ""
+  },
+  "item_mekansm": {
+    "components": [
+      "item_headdress",
+      "item_chainmail"
+    ],
+    "cost": 1775,
+    "id": 79,
+    "name": "Mekansm",
+    "quality": "rare"
+  },
+  "item_metamorphic_mandible": {
+    "components": [],
+    "cost": 0,
+    "id": 1719,
+    "name": "Metamorphic Mandible",
+    "quality": ""
+  },
+  "item_meteor_hammer": {
+    "components": [
+      "item_kaya",
+      "item_crown"
+    ],
+    "cost": 2850,
+    "id": 223,
+    "name": "Meteor Hammer",
+    "quality": "epic"
+  },
+  "item_mind_breaker": {
+    "components": [],
+    "cost": 0,
+    "id": 309,
+    "name": "Mind Breaker",
+    "quality": ""
+  },
+  "item_minotaur_horn": {
+    "components": [],
+    "cost": 0,
+    "id": 377,
+    "name": "Minotaur Horn",
+    "quality": ""
+  },
+  "item_mirror_shield": {
+    "components": [],
+    "cost": 0,
+    "id": 301,
+    "name": "Mirror Shield",
+    "quality": ""
+  },
+  "item_misericorde": {
+    "components": [],
+    "cost": 0,
+    "id": 828,
+    "name": "Brigand's Blade",
+    "quality": ""
+  },
+  "item_mithril_hammer": {
+    "components": [],
+    "cost": 1600,
+    "id": 8,
+    "name": "Mithril Hammer",
+    "quality": "component"
+  },
+  "item_mjollnir": {
+    "components": [
+      "item_maelstrom",
+      "item_hyperstone"
+    ],
+    "cost": 5500,
+    "id": 158,
+    "name": "Mjollnir",
+    "quality": "artifact"
+  },
+  "item_monkey_king_bar": {
+    "components": [
+      "item_demon_edge",
+      "item_blitz_knuckles",
+      "item_javelin"
+    ],
+    "cost": 5000,
+    "id": 135,
+    "name": "Monkey King Bar",
+    "quality": "epic"
+  },
+  "item_moon_shard": {
+    "components": [
+      "item_hyperstone",
+      "item_hyperstone"
+    ],
+    "cost": 4000,
+    "id": 247,
+    "name": "Moon Shard",
+    "quality": "consumable"
+  },
+  "item_muertas_gun": {
+    "components": [],
+    "cost": 0,
+    "id": 1090,
+    "name": "Mercy & Grace",
+    "quality": ""
+  },
+  "item_mutation_tombstone": {
+    "components": [],
+    "cost": 0,
+    "id": 1028,
+    "name": "Tombstone",
+    "quality": "consumable"
+  },
+  "item_mysterious_hat": {
+    "components": [],
+    "cost": 0,
+    "id": 589,
+    "name": "Fairy's Trinket",
+    "quality": ""
+  },
+  "item_mystic_staff": {
+    "components": [],
+    "cost": 2800,
+    "id": 58,
+    "name": "Mystic Staff",
+    "quality": "secret_shop"
+  },
+  "item_necronomicon": {
+    "components": [
+      "item_sobi_mask",
+      "item_sobi_mask",
+      "item_belt_of_strength"
+    ],
+    "cost": 2050,
+    "id": 106,
+    "name": "Necronomicon",
+    "quality": "rare"
+  },
+  "item_necronomicon_2": {
+    "components": [
+      "item_necronomicon",
+      "item_recipe_necronomicon"
+    ],
+    "cost": 3300,
+    "id": 193,
+    "name": "Necronomicon",
+    "quality": "rare"
+  },
+  "item_necronomicon_3": {
+    "components": [
+      "item_necronomicon_2",
+      "item_recipe_necronomicon"
+    ],
+    "cost": 4550,
+    "id": 194,
+    "name": "Necronomicon",
+    "quality": "rare"
+  },
+  "item_nemesis_curse": {
+    "components": [],
+    "cost": 0,
+    "id": 1159,
+    "name": "Nemesis Curse",
+    "quality": ""
+  },
+  "item_nether_shawl": {
+    "components": [],
+    "cost": 0,
+    "id": 357,
+    "name": "Nether Shawl",
+    "quality": ""
+  },
+  "item_ninja_gear": {
+    "components": [],
+    "cost": 0,
+    "id": 362,
+    "name": "Ninja Gear",
+    "quality": ""
+  },
+  "item_null_talisman": {
+    "components": [
+      "item_circlet",
+      "item_mantle"
+    ],
+    "cost": 505,
+    "id": 77,
+    "name": "Null Talisman",
+    "quality": "common"
+  },
+  "item_nullifier": {
+    "components": [
+      "item_relic",
+      "item_splintmail"
+    ],
+    "cost": 4350,
+    "id": 225,
+    "name": "Nullifier",
+    "quality": "epic"
+  },
+  "item_oblivion_staff": {
+    "components": [
+      "item_blitz_knuckles",
+      "item_robe",
+      "item_sobi_mask"
+    ],
+    "cost": 1625,
+    "id": 67,
+    "name": "Oblivion Staff",
+    "quality": "common"
+  },
+  "item_occult_bracelet": {
+    "components": [],
+    "cost": 0,
+    "id": 947,
+    "name": "Occult Bracelet",
+    "quality": ""
+  },
+  "item_ocean_heart": {
+    "components": [],
+    "cost": 0,
+    "id": 354,
+    "name": "Ocean Heart",
+    "quality": ""
+  },
+  "item_octarine_core": {
+    "components": [
+      "item_soul_booster",
+      "item_tiara_of_selemene",
+      "item_"
+    ],
+    "cost": 4900,
+    "id": 235,
+    "name": "Octarine Core",
+    "quality": "rare"
+  },
+  "item_ofrenda": {
+    "components": [],
+    "cost": 0,
+    "id": 4300,
+    "name": "Beloved Memory",
+    "quality": ""
+  },
+  "item_ofrenda_pledge": {
+    "components": [],
+    "cost": 0,
+    "id": 4302,
+    "name": "Forebearer's Fortune",
+    "quality": ""
+  },
+  "item_ofrenda_shovel": {
+    "components": [],
+    "cost": 0,
+    "id": 4301,
+    "name": "Scrying Shovel",
+    "quality": ""
+  },
+  "item_ogre_axe": {
+    "components": [],
+    "cost": 1000,
+    "id": 21,
+    "name": "Ogre Axe",
+    "quality": "component"
+  },
+  "item_ogre_seal_totem": {
+    "components": [],
+    "cost": 0,
+    "id": 949,
+    "name": "Ogre Seal Totem",
+    "quality": ""
+  },
+  "item_orb_of_corrosion": {
+    "components": [
+      "item_boots_of_elves",
+      "item_orb_of_frost",
+      "item_blight_stone"
+    ],
+    "cost": 1050,
+    "id": 569,
+    "name": "Orb of Corrosion",
+    "quality": "rare"
+  },
+  "item_orb_of_destruction": {
+    "components": [],
+    "cost": 0,
+    "id": 378,
+    "name": "Orb of Destruction",
+    "quality": ""
+  },
+  "item_orb_of_frost": {
+    "components": [],
+    "cost": 300,
+    "id": 1575,
+    "name": "Orb of Frost",
+    "quality": "rare"
+  },
+  "item_orb_of_venom": {
+    "components": [],
+    "cost": 350,
+    "id": 181,
+    "name": "Orb of Venom",
+    "quality": "component"
+  },
+  "item_orchid": {
+    "components": [
+      "item_oblivion_staff",
+      "item_claymore"
+    ],
+    "cost": 3275,
+    "id": 98,
+    "name": "Orchid Malevolence",
+    "quality": "rare"
+  },
+  "item_outworld_staff": {
+    "components": [],
+    "cost": 0,
+    "id": 1641,
+    "name": "Outworld Staff",
+    "quality": ""
+  },
+  "item_overwhelming_blink": {
+    "components": [
+      "item_blink",
+      "item_reaver"
+    ],
+    "cost": 6800,
+    "id": 600,
+    "name": "Overwhelming Blink",
+    "quality": "component"
+  },
+  "item_paintball": {
+    "components": [],
+    "cost": 0,
+    "id": 835,
+    "name": "Fae Grenade",
+    "quality": ""
+  },
+  "item_paladin_sword": {
+    "components": [],
+    "cost": 0,
+    "id": 376,
+    "name": "Paladin Sword",
+    "quality": ""
+  },
+  "item_panic_button": {
+    "components": [],
+    "cost": 0,
+    "id": 365,
+    "name": "Magic Lamp",
+    "quality": ""
+  },
+  "item_partisans_brand": {
+    "components": [],
+    "cost": 0,
+    "id": 1873,
+    "name": "Partisan's Brand",
+    "quality": ""
+  },
+  "item_pavise": {
+    "components": [
+      "item_wizard_hat",
+      "item_fluffy_hat",
+      "item_ring_of_protection"
+    ],
+    "cost": 1350,
+    "id": 1128,
+    "name": "Pavise",
+    "quality": "rare"
+  },
+  "item_penta_edged_sword": {
+    "components": [],
+    "cost": 0,
+    "id": 638,
+    "name": "Penta-Edged Sword",
+    "quality": ""
+  },
+  "item_pers": {
+    "components": [
+      "item_ring_of_health",
+      "item_void_stone"
+    ],
+    "cost": 1400,
+    "id": 69,
+    "name": "Perseverance",
+    "quality": "common"
+  },
+  "item_phase_boots": {
+    "components": [
+      "item_boots",
+      "item_chainmail",
+      "item_blades_of_attack"
+    ],
+    "cost": 1450,
+    "id": 50,
+    "name": "Phase Boots",
+    "quality": "common"
+  },
+  "item_philosophers_stone": {
+    "components": [],
+    "cost": 0,
+    "id": 290,
+    "name": "Philosopher's Stone",
+    "quality": ""
+  },
+  "item_phoenix_ash": {
+    "components": [],
+    "cost": 0,
+    "id": 293,
+    "name": "Phoenix Ash",
+    "quality": ""
+  },
+  "item_phylactery": {
+    "components": [
+      "item_pers",
+      "item_diadem"
+    ],
+    "cost": 2600,
+    "id": 1107,
+    "name": "Phylactery",
+    "quality": "common"
+  },
+  "item_pipe": {
+    "components": [
+      "item_ring_of_tarrasque",
+      "item_cloak",
+      "item_shawl",
+      "item_"
+    ],
+    "cost": 3725,
+    "id": 90,
+    "name": "Pipe of Insight",
+    "quality": "rare"
+  },
+  "item_pirate_hat": {
+    "components": [],
+    "cost": 0,
+    "id": 372,
+    "name": "Pirate Hat",
+    "quality": ""
+  },
+  "item_platemail": {
+    "components": [],
+    "cost": 1400,
+    "id": 9,
+    "name": "Platemail",
+    "quality": "secret_shop"
+  },
+  "item_pocket_roshan": {
+    "components": [],
+    "cost": 1000,
+    "id": 1032,
+    "name": "Pocket Roshan",
+    "quality": "rare"
+  },
+  "item_pocket_tower": {
+    "components": [],
+    "cost": 0,
+    "id": 1030,
+    "name": "Pocket Tower",
+    "quality": ""
+  },
+  "item_pogo_stick": {
+    "components": [],
+    "cost": 0,
+    "id": 840,
+    "name": "Tumbler's Toy",
+    "quality": ""
+  },
+  "item_point_booster": {
+    "components": [],
+    "cost": 1200,
+    "id": 60,
+    "name": "Point Booster",
+    "quality": "secret_shop"
+  },
+  "item_polliwog_charm": {
+    "components": [],
+    "cost": 0,
+    "id": 1606,
+    "name": "Pollywog Charm",
+    "quality": ""
+  },
+  "item_poor_mans_shield": {
+    "components": [],
+    "cost": 0,
+    "id": 71,
+    "name": "Poor Man's Shield",
+    "quality": "common"
+  },
+  "item_possessed_mask": {
+    "components": [],
+    "cost": 0,
+    "id": 577,
+    "name": "Possessed Mask",
+    "quality": ""
+  },
+  "item_power_treads": {
+    "components": [
+      "item_boots",
+      "item_gloves",
+      "item_belt_of_strength"
+    ],
+    "cost": 1400,
+    "id": 63,
+    "name": "Power Treads",
+    "quality": "common"
+  },
+  "item_princes_knife": {
+    "components": [],
+    "cost": 0,
+    "id": 325,
+    "name": "Prince's Knife",
+    "quality": ""
+  },
+  "item_prophets_pendulum": {
+    "components": [],
+    "cost": 0,
+    "id": 1860,
+    "name": "Prophet's Pendulum",
+    "quality": ""
+  },
+  "item_psychic_headband": {
+    "components": [],
+    "cost": 0,
+    "id": 675,
+    "name": "Psychic Headband",
+    "quality": ""
+  },
+  "item_pupils_gift": {
+    "components": [],
+    "cost": 0,
+    "id": 306,
+    "name": "Pupil's Gift",
+    "quality": ""
+  },
+  "item_pyrrhic_cloak": {
+    "components": [],
+    "cost": 0,
+    "id": 1608,
+    "name": "Pyrrhic Cloak",
+    "quality": ""
+  },
+  "item_quarterstaff": {
+    "components": [],
+    "cost": 875,
+    "id": 10,
+    "name": "Quarterstaff",
+    "quality": "component"
+  },
+  "item_quelling_blade": {
+    "components": [],
+    "cost": 100,
+    "id": 11,
+    "name": "Quelling Blade",
+    "quality": "component"
+  },
+  "item_quickening_charm": {
+    "components": [],
+    "cost": 0,
+    "id": 289,
+    "name": "Quickening Charm",
+    "quality": ""
+  },
+  "item_quicksilver_amulet": {
+    "components": [],
+    "cost": 0,
+    "id": 686,
+    "name": "Quicksilver Amulet",
+    "quality": ""
+  },
+  "item_radiance": {
+    "components": [
+      "item_relic",
+      "item_talisman_of_evasion"
+    ],
+    "cost": 4700,
+    "id": 137,
+    "name": "Radiance",
+    "quality": "epic"
+  },
+  "item_rapier": {
+    "components": [
+      "item_relic",
+      "item_demon_edge"
+    ],
+    "cost": 5600,
+    "id": 133,
+    "name": "Divine Rapier",
+    "quality": "epic"
+  },
+  "item_rattlecage": {
+    "components": [],
+    "cost": 0,
+    "id": 1168,
+    "name": "Rattlecage",
+    "quality": ""
+  },
+  "item_reaver": {
+    "components": [],
+    "cost": 2800,
+    "id": 53,
+    "name": "Reaver",
+    "quality": "secret_shop"
+  },
+  "item_recipe_abyssal_blade": {
+    "components": [],
+    "cost": 1275,
+    "id": 207,
+    "name": "Abyssal Blade Recipe",
+    "quality": ""
+  },
+  "item_recipe_aeon_disk": {
+    "components": [],
+    "cost": 1200,
+    "id": 255,
+    "name": "Aeon Disk Recipe",
+    "quality": ""
+  },
+  "item_recipe_aether_lens": {
+    "components": [],
+    "cost": 775,
+    "id": 233,
+    "name": "Aether Lens Recipe",
+    "quality": ""
+  },
+  "item_recipe_ancient_janggo": {
+    "components": [],
+    "cost": 525,
+    "id": 184,
+    "name": "Drum of Endurance Recipe",
+    "quality": ""
+  },
+  "item_recipe_arcane_blink": {
+    "components": [],
+    "cost": 1750,
+    "id": 606,
+    "name": "Arcane Blink Recipe",
+    "quality": ""
+  },
+  "item_recipe_arcane_boots": {
+    "components": [],
+    "cost": 325,
+    "id": 179,
+    "name": "Arcane Boots Recipe",
+    "quality": ""
+  },
+  "item_recipe_armlet": {
+    "components": [],
+    "cost": 625,
+    "id": 150,
+    "name": "Armlet of Mordiggian Recipe",
+    "quality": ""
+  },
+  "item_recipe_assault": {
+    "components": [],
+    "cost": 1300,
+    "id": 111,
+    "name": "Assault Cuirass Recipe",
+    "quality": ""
+  },
+  "item_recipe_basher": {
+    "components": [],
+    "cost": 825,
+    "id": 142,
+    "name": "Skull Basher Recipe",
+    "quality": ""
+  },
+  "item_recipe_bfury": {
+    "components": [],
+    "cost": 400,
+    "id": 144,
+    "name": "Battle Fury Recipe",
+    "quality": ""
+  },
+  "item_recipe_black_king_bar": {
+    "components": [],
+    "cost": 1450,
+    "id": 115,
+    "name": "Black King Bar Recipe",
+    "quality": ""
+  },
+  "item_recipe_blade_mail": {
+    "components": [],
+    "cost": 450,
+    "id": 126,
+    "name": "Blade Mail Recipe",
+    "quality": ""
+  },
+  "item_recipe_bloodthorn": {
+    "components": [],
+    "cost": 600,
+    "id": 245,
+    "name": "Bloodthorn Recipe",
+    "quality": ""
+  },
+  "item_recipe_bracer": {
+    "components": [],
+    "cost": 210,
+    "id": 72,
+    "name": "Bracer Recipe",
+    "quality": ""
+  },
+  "item_recipe_buckler": {
+    "components": [],
+    "cost": 250,
+    "id": 85,
+    "name": "Buckler Recipe",
+    "quality": ""
+  },
+  "item_recipe_consecrated_wraps": {
+    "components": [],
+    "cost": 700,
+    "id": 1853,
+    "name": "Consecrated Wraps Recipe",
+    "quality": ""
+  },
+  "item_recipe_crellas_crozier": {
+    "components": [],
+    "cost": 300,
+    "id": 1855,
+    "name": "Crella's Crozier Recipe",
+    "quality": ""
+  },
+  "item_recipe_crimson_guard": {
+    "components": [],
+    "cost": 1050,
+    "id": 243,
+    "name": "Crimson Guard Recipe",
+    "quality": ""
+  },
+  "item_recipe_cyclone": {
+    "components": [],
+    "cost": 675,
+    "id": 99,
+    "name": "Eul's Scepter Recipe",
+    "quality": ""
+  },
+  "item_recipe_dagon": {
+    "components": [],
+    "cost": 1150,
+    "id": 103,
+    "name": "Dagon Recipe",
+    "quality": ""
+  },
+  "item_recipe_devastator": {
+    "components": [],
+    "cost": 400,
+    "id": 1805,
+    "name": "Parasma Recipe",
+    "quality": ""
+  },
+  "item_recipe_diffusal_blade": {
+    "components": [],
+    "cost": 1050,
+    "id": 173,
+    "name": "Diffusal Blade Recipe",
+    "quality": ""
+  },
+  "item_recipe_disperser": {
+    "components": [],
+    "cost": 800,
+    "id": 1096,
+    "name": "Disperser Recipe",
+    "quality": ""
+  },
+  "item_recipe_dragon_lance": {
+    "components": [],
+    "cost": 450,
+    "id": 234,
+    "name": "Dragon Lance Recipe",
+    "quality": ""
+  },
+  "item_recipe_essence_distiller": {
+    "components": [],
+    "cost": 200,
+    "id": 1851,
+    "name": "Essence Distiller Recipe",
+    "quality": ""
+  },
+  "item_recipe_eternal_shroud": {
+    "components": [],
+    "cost": 900,
+    "id": 691,
+    "name": "Eternal Shroud Recipe",
+    "quality": ""
+  },
+  "item_recipe_ethereal_blade": {
+    "components": [],
+    "cost": 900,
+    "id": 175,
+    "name": "Ethereal Blade Recipe",
+    "quality": ""
+  },
+  "item_recipe_falcon_blade": {
+    "components": [],
+    "cost": 250,
+    "id": 599,
+    "name": "Falcon Blade Recipe",
+    "quality": ""
+  },
+  "item_recipe_force_staff": {
+    "components": [],
+    "cost": 950,
+    "id": 101,
+    "name": "Force Staff Recipe",
+    "quality": ""
+  },
+  "item_recipe_glimmer_cape": {
+    "components": [],
+    "cost": 800,
+    "id": 253,
+    "name": "Glimmer Cape Recipe",
+    "quality": ""
+  },
+  "item_recipe_greater_crit": {
+    "components": [],
+    "cost": 900,
+    "id": 140,
+    "name": "Daedalus Recipe",
+    "quality": ""
+  },
+  "item_recipe_guardian_greaves": {
+    "components": [],
+    "cost": 1175,
+    "id": 230,
+    "name": "Guardian Greaves Recipe",
+    "quality": ""
+  },
+  "item_recipe_gungir": {
+    "components": [],
+    "cost": 400,
+    "id": 1565,
+    "name": "Gleipnir Recipe",
+    "quality": ""
+  },
+  "item_recipe_hand_of_midas": {
+    "components": [],
+    "cost": 1750,
+    "id": 64,
+    "name": "Hand of Midas Recipe",
+    "quality": ""
+  },
+  "item_recipe_harpoon": {
+    "components": [],
+    "cost": 1000,
+    "id": 1101,
+    "name": "Harpoon Recipe",
+    "quality": ""
+  },
+  "item_recipe_headdress": {
+    "components": [],
+    "cost": 250,
+    "id": 93,
+    "name": "Headdress Recipe",
+    "quality": ""
+  },
+  "item_recipe_heart": {
+    "components": [],
+    "cost": 600,
+    "id": 113,
+    "name": "Heart of Tarrasque Recipe",
+    "quality": ""
+  },
+  "item_recipe_heavens_halberd": {
+    "components": [],
+    "cost": 450,
+    "id": 209,
+    "name": "Heaven's Halberd Recipe",
+    "quality": ""
+  },
+  "item_recipe_helm_of_the_dominator": {
+    "components": [],
+    "cost": 1125,
+    "id": 163,
+    "name": "Helm of the Dominator Recipe",
+    "quality": ""
+  },
+  "item_recipe_helm_of_the_overlord": {
+    "components": [],
+    "cost": 300,
+    "id": 633,
+    "name": "Helm of the Overlord Recipe",
+    "quality": ""
+  },
+  "item_recipe_holy_locket": {
+    "components": [],
+    "cost": 1340,
+    "id": 268,
+    "name": "Holy Locket Recipe",
+    "quality": ""
+  },
+  "item_recipe_hurricane_pike": {
+    "components": [],
+    "cost": 350,
+    "id": 262,
+    "name": "Hurricane Pike Recipe",
+    "quality": ""
+  },
+  "item_recipe_iron_talon": {
+    "components": [],
+    "cost": 125,
+    "id": 238,
+    "name": "Iron Talon Recipe",
+    "quality": ""
+  },
+  "item_recipe_kaya": {
+    "components": [],
+    "cost": 650,
+    "id": 258,
+    "name": "Kaya Recipe",
+    "quality": ""
+  },
+  "item_recipe_lesser_crit": {
+    "components": [],
+    "cost": 200,
+    "id": 148,
+    "name": "Crystalys Recipe",
+    "quality": ""
+  },
+  "item_recipe_lotus_orb": {
+    "components": [],
+    "cost": 250,
+    "id": 221,
+    "name": "Lotus Orb Recipe",
+    "quality": ""
+  },
+  "item_recipe_magic_wand": {
+    "components": [],
+    "cost": 150,
+    "id": 35,
+    "name": "Magic Wand Recipe",
+    "quality": ""
+  },
+  "item_recipe_manta": {
+    "components": [],
+    "cost": 1550,
+    "id": 146,
+    "name": "Manta Style Recipe",
+    "quality": ""
+  },
+  "item_recipe_mekansm": {
+    "components": [],
+    "cost": 850,
+    "id": 78,
+    "name": "Mekansm Recipe",
+    "quality": ""
+  },
+  "item_recipe_meteor_hammer": {
+    "components": [],
+    "cost": 300,
+    "id": 222,
+    "name": "Meteor Hammer Recipe",
+    "quality": ""
+  },
+  "item_recipe_mjollnir": {
+    "components": [],
+    "cost": 550,
+    "id": 157,
+    "name": "Mjollnir Recipe",
+    "quality": ""
+  },
+  "item_recipe_monkey_king_bar": {
+    "components": [],
+    "cost": 900,
+    "id": 134,
+    "name": "Monkey King Bar Recipe",
+    "quality": ""
+  },
+  "item_recipe_necronomicon": {
+    "components": [],
+    "cost": 1250,
+    "id": 105,
+    "name": "Necronomicon Recipe",
+    "quality": ""
+  },
+  "item_recipe_null_talisman": {
+    "components": [],
+    "cost": 210,
+    "id": 76,
+    "name": "Null Talisman Recipe",
+    "quality": ""
+  },
+  "item_recipe_octarine_core": {
+    "components": [],
+    "cost": 200,
+    "id": 228,
+    "name": "Octarine Core Recipe",
+    "quality": ""
+  },
+  "item_recipe_orchid": {
+    "components": [],
+    "cost": 300,
+    "id": 97,
+    "name": "Orchid Malevolence Recipe",
+    "quality": ""
+  },
+  "item_recipe_overwhelming_blink": {
+    "components": [],
+    "cost": 1750,
+    "id": 608,
+    "name": "Overwhelming Blink Recipe",
+    "quality": ""
+  },
+  "item_recipe_pavise": {
+    "components": [],
+    "cost": 675,
+    "id": 1127,
+    "name": "Pavise Recipe",
+    "quality": ""
+  },
+  "item_recipe_phylactery": {
+    "components": [],
+    "cost": 200,
+    "id": 1106,
+    "name": "Phylactery Recipe",
+    "quality": ""
+  },
+  "item_recipe_pipe": {
+    "components": [],
+    "cost": 675,
+    "id": 89,
+    "name": "Pipe of Insight Recipe",
+    "quality": ""
+  },
+  "item_recipe_refresher": {
+    "components": [],
+    "cost": 1600,
+    "id": 109,
+    "name": "Refresher Orb Recipe",
+    "quality": ""
+  },
+  "item_recipe_revenants_brooch": {
+    "components": [],
+    "cost": 650,
+    "id": 910,
+    "name": "Revenant's Brooch Recipe",
+    "quality": ""
+  },
+  "item_recipe_ring_of_basilius": {
+    "components": [],
+    "cost": 250,
+    "id": 87,
+    "name": "Ring of Basilius Recipe",
+    "quality": ""
+  },
+  "item_recipe_rod_of_atos": {
+    "components": [],
+    "cost": 250,
+    "id": 205,
+    "name": "Rod of Atos Recipe",
+    "quality": ""
+  },
+  "item_recipe_sange": {
+    "components": [],
+    "cost": 650,
+    "id": 161,
+    "name": "Sange Recipe",
+    "quality": ""
+  },
+  "item_recipe_sheepstick": {
+    "components": [],
+    "cost": 700,
+    "id": 95,
+    "name": "Scythe of Vyse Recipe",
+    "quality": ""
+  },
+  "item_recipe_shivas_guard": {
+    "components": [],
+    "cost": 1350,
+    "id": 118,
+    "name": "Shiva's Guard Recipe",
+    "quality": ""
+  },
+  "item_recipe_silver_edge": {
+    "components": [],
+    "cost": 250,
+    "id": 248,
+    "name": "Silver Edge Recipe",
+    "quality": ""
+  },
+  "item_recipe_solar_crest": {
+    "components": [],
+    "cost": 500,
+    "id": 227,
+    "name": "Solar Crest Recipe",
+    "quality": ""
+  },
+  "item_recipe_soul_ring": {
+    "components": [],
+    "cost": 350,
+    "id": 177,
+    "name": "Soul Ring Recipe",
+    "quality": ""
+  },
+  "item_recipe_sphere": {
+    "components": [],
+    "cost": 600,
+    "id": 122,
+    "name": "Linken's Sphere Recipe",
+    "quality": ""
+  },
+  "item_recipe_spirit_vessel": {
+    "components": [],
+    "cost": 900,
+    "id": 266,
+    "name": "Spirit Vessel Recipe",
+    "quality": ""
+  },
+  "item_recipe_swift_blink": {
+    "components": [],
+    "cost": 1750,
+    "id": 607,
+    "name": "Swift Blink Recipe",
+    "quality": ""
+  },
+  "item_recipe_travel_boots": {
+    "components": [],
+    "cost": 2000,
+    "id": 47,
+    "name": "Boots of Travel Recipe",
+    "quality": ""
+  },
+  "item_recipe_trident": {
+    "components": [],
+    "cost": 1,
+    "id": 275,
+    "name": "Trident Recipe",
+    "quality": ""
+  },
+  "item_recipe_ultimate_scepter_2": {
+    "components": [],
+    "cost": 1600,
+    "id": 270,
+    "name": "Aghanim's Blessing Recipe",
+    "quality": ""
+  },
+  "item_recipe_urn_of_shadows": {
+    "components": [],
+    "cost": 320,
+    "id": 91,
+    "name": "Urn of Shadows Recipe",
+    "quality": ""
+  },
+  "item_recipe_veil_of_discord": {
+    "components": [],
+    "cost": 350,
+    "id": 189,
+    "name": "Veil of Discord Recipe",
+    "quality": ""
+  },
+  "item_recipe_wind_waker": {
+    "components": [],
+    "cost": 1400,
+    "id": 612,
+    "name": "Wind Waker Recipe",
+    "quality": ""
+  },
+  "item_recipe_witch_blade": {
+    "components": [],
+    "cost": 300,
+    "id": 533,
+    "name": "Witch Blade Recipe",
+    "quality": ""
+  },
+  "item_recipe_wraith_band": {
+    "components": [],
+    "cost": 210,
+    "id": 74,
+    "name": "Wraith Band Recipe",
+    "quality": ""
+  },
+  "item_recipe_yasha": {
+    "components": [],
+    "cost": 650,
+    "id": 169,
+    "name": "Yasha Recipe",
+    "quality": ""
+  },
+  "item_refresher": {
+    "components": [
+      "item_ring_of_tarrasque",
+      "item_tiara_of_selemene"
+    ],
+    "cost": 5000,
+    "id": 110,
+    "name": "Refresher Orb",
+    "quality": "rare"
+  },
+  "item_refresher_shard": {
+    "components": [],
+    "cost": 1000,
+    "id": 260,
+    "name": "Refresher Shard",
+    "quality": "consumable"
+  },
+  "item_relic": {
+    "components": [],
+    "cost": 3400,
+    "id": 54,
+    "name": "Sacred Relic",
+    "quality": "secret_shop"
+  },
+  "item_repair_kit": {
+    "components": [],
+    "cost": 0,
+    "id": 308,
+    "name": "Repair Kit",
+    "quality": "consumable"
+  },
+  "item_revenants_brooch": {
+    "components": [
+      "item_lesser_crit",
+      "item_voodoo_mask"
+    ],
+    "cost": 3300,
+    "id": 911,
+    "name": "Revenant's Brooch",
+    "quality": "rare"
+  },
+  "item_riftshadow_prism": {
+    "components": [],
+    "cost": 0,
+    "id": 1718,
+    "name": "Riftshadow Prism",
+    "quality": ""
+  },
+  "item_ring_of_aquila": {
+    "components": [],
+    "cost": 0,
+    "id": 212,
+    "name": "Ring of Aquila",
+    "quality": ""
+  },
+  "item_ring_of_basilius": {
+    "components": [
+      "item_sobi_mask"
+    ],
+    "cost": 425,
+    "id": 88,
+    "name": "Ring of Basilius",
+    "quality": "rare"
+  },
+  "item_ring_of_health": {
+    "components": [],
+    "cost": 700,
+    "id": 56,
+    "name": "Ring of Health",
+    "quality": "component"
+  },
+  "item_ring_of_protection": {
+    "components": [],
+    "cost": 175,
+    "id": 12,
+    "name": "Ring of Protection",
+    "quality": "component"
+  },
+  "item_ring_of_regen": {
+    "components": [],
+    "cost": 175,
+    "id": 27,
+    "name": "Ring of Regen",
+    "quality": "component"
+  },
+  "item_ring_of_tarrasque": {
+    "components": [],
+    "cost": 1700,
+    "id": 279,
+    "name": "Ring of Tarrasque",
+    "quality": "component"
+  },
+  "item_rippers_lash": {
+    "components": [],
+    "cost": 0,
+    "id": 1600,
+    "name": "Ripper's Lash",
+    "quality": ""
+  },
+  "item_river_painter": {
+    "components": [],
+    "cost": 0,
+    "id": 1021,
+    "name": "River Vial: Chrome",
+    "quality": "component"
+  },
+  "item_river_painter2": {
+    "components": [],
+    "cost": 0,
+    "id": 1022,
+    "name": "River Vial: Dry",
+    "quality": "component"
+  },
+  "item_river_painter3": {
+    "components": [],
+    "cost": 0,
+    "id": 1023,
+    "name": "River Vial: Slime",
+    "quality": "component"
+  },
+  "item_river_painter4": {
+    "components": [],
+    "cost": 0,
+    "id": 1024,
+    "name": "River Vial: Oil",
+    "quality": "component"
+  },
+  "item_river_painter5": {
+    "components": [],
+    "cost": 0,
+    "id": 1025,
+    "name": "River Vial: Electrified",
+    "quality": "component"
+  },
+  "item_river_painter6": {
+    "components": [],
+    "cost": 0,
+    "id": 1026,
+    "name": "River Vial: Potion",
+    "quality": "component"
+  },
+  "item_river_painter7": {
+    "components": [],
+    "cost": 0,
+    "id": 1027,
+    "name": "River Vial: Blood",
+    "quality": "component"
+  },
+  "item_robe": {
+    "components": [],
+    "cost": 450,
+    "id": 19,
+    "name": "Robe of the Magi",
+    "quality": "component"
+  },
+  "item_rod_of_atos": {
+    "components": [
+      "item_staff_of_wizardry",
+      "item_vitality_booster"
+    ],
+    "cost": 2250,
+    "id": 206,
+    "name": "Rod of Atos",
+    "quality": "rare"
+  },
+  "item_roshans_banner": {
+    "components": [],
+    "cost": 0,
+    "id": 1804,
+    "name": "Roshan's Banner",
+    "quality": "consumable"
+  },
+  "item_royal_jelly": {
+    "components": [],
+    "cost": 0,
+    "id": 305,
+    "name": "Royal Jelly",
+    "quality": "consumable"
+  },
+  "item_royale_with_cheese": {
+    "components": [],
+    "cost": 2,
+    "id": 1154,
+    "name": "Block of Cheese",
+    "quality": "consumable"
+  },
+  "item_safety_bubble": {
+    "components": [],
+    "cost": 0,
+    "id": 1157,
+    "name": "Safety Bubble",
+    "quality": ""
+  },
+  "item_sange": {
+    "components": [
+      "item_ogre_axe",
+      "item_belt_of_strength"
+    ],
+    "cost": 2100,
+    "id": 162,
+    "name": "Sange",
+    "quality": "artifact"
+  },
+  "item_sange_and_yasha": {
+    "components": [
+      "item_sange",
+      "item_yasha"
+    ],
+    "cost": 4200,
+    "id": 154,
+    "name": "Sange and Yasha",
+    "quality": "artifact"
+  },
+  "item_satanic": {
+    "components": [
+      "item_reaver",
+      "item_claymore",
+      "item_lifesteal"
+    ],
+    "cost": 5050,
+    "id": 156,
+    "name": "Satanic",
+    "quality": "artifact"
+  },
+  "item_searing_signet": {
+    "components": [],
+    "cost": 0,
+    "id": 1604,
+    "name": "Searing Signet",
+    "quality": ""
+  },
+  "item_seeds_of_serenity": {
+    "components": [],
+    "cost": 0,
+    "id": 945,
+    "name": "Seeds of Serenity",
+    "quality": ""
+  },
+  "item_seer_stone": {
+    "components": [],
+    "cost": 0,
+    "id": 294,
+    "name": "Seer Stone",
+    "quality": ""
+  },
+  "item_serrated_shiv": {
+    "components": [],
+    "cost": 0,
+    "id": 1605,
+    "name": "Serrated Shiv",
+    "quality": ""
+  },
+  "item_shadow_amulet": {
+    "components": [],
+    "cost": 900,
+    "id": 215,
+    "name": "Shadow Amulet",
+    "quality": ""
+  },
+  "item_shawl": {
+    "components": [],
+    "cost": 450,
+    "id": 1848,
+    "name": "Shawl",
+    "quality": "component"
+  },
+  "item_sheepstick": {
+    "components": [
+      "item_mystic_staff",
+      "item_tiara_of_selemene"
+    ],
+    "cost": 5200,
+    "id": 96,
+    "name": "Scythe of Vyse",
+    "quality": "rare"
+  },
+  "item_shivas_guard": {
+    "components": [
+      "item_platemail",
+      "item_splintmail",
+      "item_chasm_stone"
+    ],
+    "cost": 4500,
+    "id": 119,
+    "name": "Shiva's Guard",
+    "quality": "epic"
+  },
+  "item_silver_edge": {
+    "components": [
+      "item_invis_sword",
+      "item_demon_edge"
+    ],
+    "cost": 5700,
+    "id": 249,
+    "name": "Silver Edge",
+    "quality": "epic"
+  },
+  "item_sisters_shroud": {
+    "components": [],
+    "cost": 0,
+    "id": 1639,
+    "name": "Sister's Shroud",
+    "quality": ""
+  },
+  "item_skadi": {
+    "components": [
+      "item_ultimate_orb",
+      "item_ultimate_orb",
+      "item_orb_of_frost"
+    ],
+    "cost": 5900,
+    "id": 160,
+    "name": "Eye of Skadi",
+    "quality": "artifact"
+  },
+  "item_slippers": {
+    "components": [],
+    "cost": 140,
+    "id": 14,
+    "name": "Slippers of Agility",
+    "quality": "component"
+  },
+  "item_smoke_of_deceit": {
+    "components": [],
+    "cost": 50,
+    "id": 188,
+    "name": "Smoke of Deceit",
+    "quality": "consumable"
+  },
+  "item_sobi_mask": {
+    "components": [],
+    "cost": 175,
+    "id": 28,
+    "name": "Sage's Mask",
+    "quality": "component"
+  },
+  "item_solar_crest": {
+    "components": [
+      "item_pavise",
+      "item_chainmail",
+      "item_wind_lace"
+    ],
+    "cost": 2575,
+    "id": 229,
+    "name": "Solar Crest",
+    "quality": "rare"
+  },
+  "item_soul_booster": {
+    "components": [
+      "item_point_booster",
+      "item_vitality_booster",
+      "item_energy_booster"
+    ],
+    "cost": 3000,
+    "id": 129,
+    "name": "Soul Booster",
+    "quality": "epic"
+  },
+  "item_soul_ring": {
+    "components": [
+      "item_ring_of_protection",
+      "item_gauntlets",
+      "item_gauntlets"
+    ],
+    "cost": 805,
+    "id": 178,
+    "name": "Soul Ring",
+    "quality": "common"
+  },
+  "item_spark_of_courage": {
+    "components": [],
+    "cost": 0,
+    "id": 1124,
+    "name": "Spark of Courage",
+    "quality": ""
+  },
+  "item_specialists_array": {
+    "components": [
+      "item_blade_of_alacrity",
+      "item_broadsword"
+    ],
+    "cost": 2550,
+    "id": 1076,
+    "name": "Specialist's Array",
+    "quality": "rare"
+  },
+  "item_spell_prism": {
+    "components": [],
+    "cost": 0,
+    "id": 311,
+    "name": "Spell Prism",
+    "quality": ""
+  },
+  "item_spellslinger": {
+    "components": [],
+    "cost": 0,
+    "id": 1859,
+    "name": "Spellslinger",
+    "quality": ""
+  },
+  "item_sphere": {
+    "components": [
+      "item_pers",
+      "item_ultimate_orb",
+      "item_"
+    ],
+    "cost": 4800,
+    "id": 123,
+    "name": "Linken's Sphere",
+    "quality": "epic"
+  },
+  "item_spider_legs": {
+    "components": [],
+    "cost": 0,
+    "id": 326,
+    "name": "Spider Legs",
+    "quality": ""
+  },
+  "item_spirit_vessel": {
+    "components": [
+      "item_urn_of_shadows",
+      "item_diadem"
+    ],
+    "cost": 2725,
+    "id": 267,
+    "name": "Spirit Vessel",
+    "quality": "rare"
+  },
+  "item_splintmail": {
+    "components": [],
+    "cost": 950,
+    "id": 1847,
+    "name": "Splintmail",
+    "quality": "component"
+  },
+  "item_spy_gadget": {
+    "components": [],
+    "cost": 0,
+    "id": 336,
+    "name": "Telescope",
+    "quality": ""
+  },
+  "item_staff_of_wizardry": {
+    "components": [],
+    "cost": 1000,
+    "id": 23,
+    "name": "Staff of Wizardry",
+    "quality": "component"
+  },
+  "item_stonefeather_satchel": {
+    "components": [],
+    "cost": 0,
+    "id": 1861,
+    "name": "Stonefeather Satchel",
+    "quality": ""
+  },
+  "item_stormcrafter": {
+    "components": [],
+    "cost": 0,
+    "id": 585,
+    "name": "Stormcrafter",
+    "quality": ""
+  },
+  "item_stout_shield": {
+    "components": [],
+    "cost": 100,
+    "id": 182,
+    "name": "Stout Shield",
+    "quality": "component"
+  },
+  "item_swift_blink": {
+    "components": [
+      "item_blink",
+      "item_eagle"
+    ],
+    "cost": 6800,
+    "id": 603,
+    "name": "Swift Blink",
+    "quality": "component"
+  },
+  "item_talisman_of_evasion": {
+    "components": [],
+    "cost": 1300,
+    "id": 32,
+    "name": "Talisman of Evasion",
+    "quality": "secret_shop"
+  },
+  "item_tango": {
+    "components": [],
+    "cost": 90,
+    "id": 44,
+    "name": "Tango",
+    "quality": "consumable"
+  },
+  "item_tango_single": {
+    "components": [],
+    "cost": 30,
+    "id": 241,
+    "name": "Tango (Shared)",
+    "quality": "consumable"
+  },
+  "item_the_leveller": {
+    "components": [],
+    "cost": 0,
+    "id": 379,
+    "name": "The Leveller",
+    "quality": ""
+  },
+  "item_third_eye": {
+    "components": [],
+    "cost": 0,
+    "id": 310,
+    "name": "Third Eye",
+    "quality": ""
+  },
+  "item_tiara_of_selemene": {
+    "components": [],
+    "cost": 1700,
+    "id": 1802,
+    "name": "Tiara of Selemene",
+    "quality": "component"
+  },
+  "item_tidehunter_fish": {
+    "components": [],
+    "cost": 0,
+    "id": 1875,
+    "name": "Leviathan's Fish",
+    "quality": ""
+  },
+  "item_tier1_token": {
+    "components": [],
+    "cost": 0,
+    "id": 2091,
+    "name": "Tier 1 Token",
+    "quality": ""
+  },
+  "item_tier2_token": {
+    "components": [],
+    "cost": 0,
+    "id": 2092,
+    "name": "Tier 2 Token",
+    "quality": ""
+  },
+  "item_tier3_token": {
+    "components": [],
+    "cost": 0,
+    "id": 2093,
+    "name": "Tier 3 Token",
+    "quality": ""
+  },
+  "item_tier4_token": {
+    "components": [],
+    "cost": 0,
+    "id": 2094,
+    "name": "Tier 4 Token",
+    "quality": ""
+  },
+  "item_tier5_token": {
+    "components": [],
+    "cost": 0,
+    "id": 2095,
+    "name": "Tier 5 Token",
+    "quality": ""
+  },
+  "item_timeless_relic": {
+    "components": [],
+    "cost": 0,
+    "id": 300,
+    "name": "Timeless Relic",
+    "quality": ""
+  },
+  "item_titan_sliver": {
+    "components": [],
+    "cost": 0,
+    "id": 381,
+    "name": "Titan Sliver",
+    "quality": ""
+  },
+  "item_tome_of_aghanim": {
+    "components": [],
+    "cost": 0,
+    "id": 307,
+    "name": "Tome of Aghanim",
+    "quality": ""
+  },
+  "item_tome_of_knowledge": {
+    "components": [],
+    "cost": 75,
+    "id": 257,
+    "name": "Tome of Knowledge",
+    "quality": "consumable"
+  },
+  "item_tpscroll": {
+    "components": [],
+    "cost": 100,
+    "id": 46,
+    "name": "Town Portal Scroll",
+    "quality": "consumable"
+  },
+  "item_tranquil_boots": {
+    "components": [
+      "item_boots",
+      "item_wind_lace",
+      "item_ring_of_regen"
+    ],
+    "cost": 900,
+    "id": 214,
+    "name": "Tranquil Boots",
+    "quality": "rare"
+  },
+  "item_travel_boots": {
+    "components": [
+      "item_boots"
+    ],
+    "cost": 2500,
+    "id": 48,
+    "name": "Boots of Travel",
+    "quality": "common"
+  },
+  "item_travel_boots_2": {
+    "components": [
+      "item_travel_boots",
+      "item_recipe_travel_boots"
+    ],
+    "cost": 4500,
+    "id": 220,
+    "name": "Boots of Travel 2",
+    "quality": "common"
+  },
+  "item_trickster_cloak": {
+    "components": [],
+    "cost": 0,
+    "id": 571,
+    "name": "Trickster Cloak",
+    "quality": ""
+  },
+  "item_trident": {
+    "components": [
+      "item_kaya",
+      "item_sange",
+      "item_yasha",
+      "item_"
+    ],
+    "cost": 6301,
+    "id": 369,
+    "name": "Trident",
+    "quality": ""
+  },
+  "item_trusty_shovel": {
+    "components": [],
+    "cost": 0,
+    "id": 356,
+    "name": "Trusty Shovel",
+    "quality": ""
+  },
+  "item_ultimate_orb": {
+    "components": [],
+    "cost": 2800,
+    "id": 24,
+    "name": "Ultimate Orb",
+    "quality": "secret_shop"
+  },
+  "item_ultimate_scepter": {
+    "components": [
+      "item_point_booster",
+      "item_staff_of_wizardry",
+      "item_ogre_axe",
+      "item_blade_of_alacrity"
+    ],
+    "cost": 4200,
+    "id": 108,
+    "name": "Aghanim's Scepter",
+    "quality": "rare"
+  },
+  "item_ultimate_scepter_2": {
+    "components": [
+      "item_ultimate_scepter"
+    ],
+    "cost": 5800,
+    "id": 271,
+    "name": "Aghanim's Blessing",
+    "quality": "rare"
+  },
+  "item_ultimate_scepter_roshan": {
+    "components": [],
+    "cost": 5800,
+    "id": 727,
+    "name": "Aghanim's Blessing - Roshan",
+    "quality": "rare"
+  },
+  "item_unrelenting_eye": {
+    "components": [],
+    "cost": 0,
+    "id": 1598,
+    "name": "Unrelenting Eye",
+    "quality": ""
+  },
+  "item_unstable_wand": {
+    "components": [],
+    "cost": 0,
+    "id": 838,
+    "name": "Pig Pole",
+    "quality": ""
+  },
+  "item_unwavering_condition": {
+    "components": [],
+    "cost": 0,
+    "id": 1161,
+    "name": "Unwavering Condition",
+    "quality": ""
+  },
+  "item_urn_of_shadows": {
+    "components": [
+      "item_sobi_mask",
+      "item_ring_of_protection",
+      "item_circlet",
+      "item_"
+    ],
+    "cost": 825,
+    "id": 92,
+    "name": "Urn of Shadows",
+    "quality": "rare"
+  },
+  "item_vambrace": {
+    "components": [],
+    "cost": 0,
+    "id": 331,
+    "name": "Vambrace",
+    "quality": "common"
+  },
+  "item_vampire_fangs": {
+    "components": [],
+    "cost": 0,
+    "id": 297,
+    "name": "Vampire Fangs",
+    "quality": ""
+  },
+  "item_vanguard": {
+    "components": [
+      "item_vitality_booster",
+      "item_ring_of_health"
+    ],
+    "cost": 1700,
+    "id": 125,
+    "name": "Vanguard",
+    "quality": "epic"
+  },
+  "item_veil_of_discord": {
+    "components": [
+      "item_voodoo_mask",
+      "item_robe",
+      "item_fluffy_hat"
+    ],
+    "cost": 1700,
+    "id": 190,
+    "name": "Veil of Discord",
+    "quality": "rare"
+  },
+  "item_vindicators_axe": {
+    "components": [],
+    "cost": 0,
+    "id": 2096,
+    "name": "Vindicator's Axe",
+    "quality": ""
+  },
+  "item_vitality_booster": {
+    "components": [],
+    "cost": 1000,
+    "id": 61,
+    "name": "Vitality Booster",
+    "quality": "secret_shop"
+  },
+  "item_vladmir": {
+    "components": [
+      "item_buckler",
+      "item_ring_of_basilius",
+      "item_lifesteal",
+      "item_blades_of_attack"
+    ],
+    "cost": 2200,
+    "id": 81,
+    "name": "Vladmir's Offering",
+    "quality": "rare"
+  },
+  "item_void_stone": {
+    "components": [],
+    "cost": 700,
+    "id": 57,
+    "name": "Void Stone",
+    "quality": "component"
+  },
+  "item_voodoo_mask": {
+    "components": [],
+    "cost": 650,
+    "id": 473,
+    "name": "Voodoo Mask",
+    "quality": "component"
+  },
+  "item_ward_dispenser": {
+    "components": [
+      "item_ward_sentry",
+      "item_ward_observer"
+    ],
+    "cost": 50,
+    "id": 218,
+    "name": "Observer and Sentry Wards",
+    "quality": "consumable;laning"
+  },
+  "item_ward_observer": {
+    "components": [],
+    "cost": 0,
+    "id": 42,
+    "name": "Observer Ward",
+    "quality": "consumable"
+  },
+  "item_ward_sentry": {
+    "components": [],
+    "cost": 50,
+    "id": 43,
+    "name": "Sentry Ward",
+    "quality": "consumable"
+  },
+  "item_weighted_dice": {
+    "components": [],
+    "cost": 0,
+    "id": 1716,
+    "name": "Weighted Dice",
+    "quality": ""
+  },
+  "item_whisper_of_the_dread": {
+    "components": [],
+    "cost": 0,
+    "id": 1158,
+    "name": "Whisper of the Dread",
+    "quality": ""
+  },
+  "item_wind_lace": {
+    "components": [],
+    "cost": 225,
+    "id": 244,
+    "name": "Wind Lace",
+    "quality": "component"
+  },
+  "item_wind_waker": {
+    "components": [
+      "item_cyclone",
+      "item_mystic_staff"
+    ],
+    "cost": 6800,
+    "id": 610,
+    "name": "Wind Waker",
+    "quality": "rare"
+  },
+  "item_witch_blade": {
+    "components": [
+      "item_oblivion_staff",
+      "item_chainmail",
+      "item_orb_of_venom"
+    ],
+    "cost": 2775,
+    "id": 534,
+    "name": "Witch Blade",
+    "quality": "common"
+  },
+  "item_witless_shako": {
+    "components": [],
+    "cost": 0,
+    "id": 330,
+    "name": "Witless Shako",
+    "quality": ""
+  },
+  "item_wizard_hat": {
+    "components": [],
+    "cost": 250,
+    "id": 1849,
+    "name": "Wizard Hat",
+    "quality": ""
+  },
+  "item_woodland_striders": {
+    "components": [],
+    "cost": 0,
+    "id": 368,
+    "name": "Woodland Striders",
+    "quality": ""
+  },
+  "item_wraith_band": {
+    "components": [
+      "item_circlet",
+      "item_slippers"
+    ],
+    "cost": 505,
+    "id": 75,
+    "name": "Wraith Band",
+    "quality": "common"
+  },
+  "item_wraith_pact": {
+    "components": [
+      "item_vladmir",
+      "item_point_booster"
+    ],
+    "cost": 3800,
+    "id": 908,
+    "name": "Wraith Pact",
+    "quality": "rare"
+  },
+  "item_yasha": {
+    "components": [
+      "item_blade_of_alacrity",
+      "item_boots_of_elves"
+    ],
+    "cost": 2100,
+    "id": 170,
+    "name": "Yasha",
+    "quality": "artifact"
+  },
+  "item_yasha_and_kaya": {
+    "components": [
+      "item_yasha",
+      "item_kaya"
+    ],
+    "cost": 4200,
+    "id": 277,
+    "name": "Yasha and Kaya",
+    "quality": "artifact"
+  }
+}

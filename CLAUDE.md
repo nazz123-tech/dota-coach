@@ -40,7 +40,7 @@ source .venv/bin/activate                # activate (every new terminal)
 pip install -r requirements-dev.txt      # install deps (app + pytest, ruff)
 uvicorn companion.main:app --host 127.0.0.1 --port 3000
 pytest                                   # tests (use fixtures/)
-python scripts/sync_data.py              # refresh OpenDota cache after a patch
+python -m scripts.sync_data              # refresh OpenDota cache after a patch
 
 # web
 cd web && npm install && npm run dev

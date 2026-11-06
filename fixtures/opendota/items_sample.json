@@ -1,0 +1,175 @@
+{
+  "hand_of_midas": {
+    "abilities": [
+      {
+        "type": "active",
+        "title": "Transmute",
+        "description": "Kills a non-hero target for 160 gold. Killing a neutral creep additionally grants a madstone bundle. \n\n Cannot be used on Ancient creeps."
+      }
+    ],
+    "hint": [],
+    "id": 65,
+    "img": "/apps/dota2/images/dota_react/items/hand_of_midas.png?t=1593393829403",
+    "dname": "Hand of Midas",
+    "qual": "common",
+    "cost": 2200,
+    "behavior": "Unit Target",
+    "target_team": "Enemy",
+    "target_type": [],
+    "notes": "The gold given is unreliable gold (you do not get the normal creep bounty).\nExperience gained by using Transmute is not shared.",
+    "attrib": [
+      {
+        "key": "bonus_attack_speed",
+        "display": "+ {value} Attack Speed",
+        "value": "35"
+      },
+      {
+        "key": "bonus_gold",
+        "value": "160"
+      }
+    ],
+    "mc": false,
+    "hc": false,
+    "cd": false,
+    "lore": "Preserved through unknown magical means, the Hand of Midas is a weapon of greed, sacrificing animals to line the owner's pockets.",
+    "components": [
+      "gloves"
+    ],
+    "created": true,
+    "charges": 1
+  },
+  "gloves": {
+    "id": 25,
+    "img": "/apps/dota2/images/dota_react/items/gloves.png?t=1593393829403",
+    "dname": "Gloves of Haste",
+    "qual": "component",
+    "cost": 450,
+    "notes": "",
+    "attrib": [
+      {
+        "key": "bonus_attack_speed",
+        "display": "+ {value} Attack Speed",
+        "value": "20"
+      }
+    ],
+    "mc": false,
+    "hc": false,
+    "cd": false,
+    "lore": "A pair of magical gloves that seems to render weapons weightless.",
+    "components": null,
+    "created": false,
+    "charges": false
+  },
+  "recipe_hand_of_midas": {
+    "id": 64,
+    "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
+    "dname": "Hand of Midas Recipe",
+    "cost": 1750,
+    "behavior": false,
+    "notes": "",
+    "attrib": [],
+    "mc": false,
+    "hc": false,
+    "cd": false,
+    "lore": "",
+    "components": null,
+    "created": false,
+    "charges": false
+  },
+  "tango": {
+    "abilities": [
+      {
+        "type": "use",
+        "title": "Devour",
+        "description": "Consumes a target tree to gain 7 health regeneration for 16 seconds. Consuming an Ironwood Tree doubles the heal duration.\n\nComes with 3 charges. Can be used on an allied hero to give them one Tango.\n\nTree Range: 165"
+      }
+    ],
+    "hint": [],
+    "id": 44,
+    "img": "/apps/dota2/images/dota_react/items/tango.png?t=1593393829403",
+    "dname": "Tango",
+    "qual": "consumable",
+    "cost": 90,
+    "behavior": "Unit Target",
+    "target_team": [],
+    "target_type": "Tree",
+    "notes": "",
+    "attrib": [
+      {
+        "key": "health_regen",
+        "value": "7.0"
+      },
+      {
+        "key": "buff_duration",
+        "value": "16.0"
+      },
+      {
+        "key": "tooltip_charges",
+        "value": "3"
+      }
+    ],
+    "mc": false,
+    "hc": false,
+    "cd": false,
+    "lore": "Forage to survive on the battlefield.",
+    "components": null,
+    "created": false,
+    "charges": 3
+  },
+  "blink": {
+    "abilities": [
+      {
+        "type": "active",
+        "title": "Blink",
+        "description": "Teleport to a target point up to 1200 units away. \n\nBlink Dagger cannot be used for 3 seconds after taking damage from an enemy hero or Roshan."
+      }
+    ],
+    "hint": [],
+    "id": 1,
+    "img": "/apps/dota2/images/dota_react/items/blink.png?t=1593393829403",
+    "dname": "Blink Dagger",
+    "qual": "component",
+    "cost": 2250,
+    "behavior": "Point Target",
+    "notes": "Self-casting will cause you to teleport in the direction of your team's fountain.",
+    "attrib": [
+      {
+        "key": "blink_range",
+        "value": "1200"
+      },
+      {
+        "key": "blink_damage_cooldown",
+        "value": "3.0"
+      },
+      {
+        "key": "blink_range_clamp",
+        "value": "960"
+      }
+    ],
+    "mc": false,
+    "hc": false,
+    "cd": 15,
+    "lore": "The fabled dagger used by the fastest assassin ever to walk the lands.",
+    "components": null,
+    "created": false,
+    "charges": false
+  },
+  "greater_mango": {
+    "id": 295,
+    "img": "/apps/dota2/images/dota_react/items/greater_mango.png?t=1593393829403",
+    "cost": 0,
+    "behavior": [
+      "Instant Cast",
+      "No Target"
+    ],
+    "notes": "",
+    "attrib": [],
+    "mc": false,
+    "hc": false,
+    "cd": false,
+    "lore": "",
+    "components": null,
+    "created": false,
+    "charges": false
+  }
+}

@@ -79,7 +79,12 @@ External: OpenDota API (synced once per patch, cached)
 
 ### 3. Data store (`companion/data`, `scripts/sync_data.py`)
 - Source: OpenDota (constants, hero item popularity, matchups, benchmarks).
-- Synced once per patch into `data/*.json` (or SQLite).
+- Synced once per patch into `data/*.json` by `python -m scripts.sync_data`:
+  `heroes.json` and `items.json` keyed by GSI internal names (`npc_dota_hero_*`,
+  `item_*`), `meta.json` with the patch and sync time. Committed to git so the
+  gaming PC gets it with `git pull`.
+- `companion/data/transform.py` (pure: raw OpenDota → cache format) and
+  `companion/data/store.py` (`DataStore`: load/save + lookups).
 - Runtime: zero network calls during a match.
 - Interface: `get_build(hero)`, `get_skill_order(hero)`, `get_matchups(hero)`,
   `get_benchmark(hero, minute)`.
