@@ -12,7 +12,9 @@ from typing import Any
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
+from pydantic import ValidationError
 
+from companion.gsi.models import GameState
 from companion.gsi.recorder import clean_for_fixture, fixture_name, save_reason
 
 logger = logging.getLogger("uvicorn.error")  # shows up in uvicorn's console output
@@ -99,16 +101,19 @@ async def receive_gsi(request: Request) -> dict[str, bool]:
             )
         raise HTTPException(status_code=401, detail="bad token")
 
-    game_map = payload.get("map", {})
-    hero = payload.get("hero", {})
-    player = payload.get("player", {})
+    # Turn the raw dict into typed data (see companion/gsi/models.py).
+    try:
+        state = GameState.model_validate(payload)
+    except ValidationError as err:
+        logger.warning("Payload didn't match the GSI models: %s", err)
+        raise HTTPException(status_code=400, detail="unexpected payload shape")
 
-    if game_map:
+    if state.map is not None and state.hero_picked:
+        p, h = state.player, state.hero
+        items = ", ".join(name.removeprefix("item_") for name in state.inventory) or "-"
         print(
-            f"[{game_map.get('clock_time', '?'):>5}s] "
-            f"{hero.get('name', '?')} lvl {hero.get('level', '?')} "
-            f"gold {player.get('gold', '?')} "
-            f"K/D/A {player.get('kills', 0)}/{player.get('deaths', 0)}/{player.get('assists', 0)}"
+            f"[{state.map.clock_time:>5}s] {h.name} lvl {h.level} "
+            f"gold {p.gold} K/D/A {p.kills}/{p.deaths}/{p.assists} | {items}"
         )
 
     # Record real payloads for tests (Phase 1, step 4) -- only on interesting events.

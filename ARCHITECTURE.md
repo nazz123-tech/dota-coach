@@ -63,6 +63,10 @@ External: OpenDota API (synced once per patch, cached)
 - FastAPI app on `127.0.0.1:3000`, single `POST /` route.
 - Validates the `auth.token` from the GSI payload; rejects anything else.
 - Parses into Pydantic models; unknown fields ignored.
+  Models live in `companion/gsi/models.py` (`GameState`); every field has a
+  default because Dota omits sections in the menu and during hero selection.
+- Optional fixture recording (`SAVE_FIXTURES=1`) saves payloads only on events,
+  with the `auth` token removed and Steam ID/account ID/name redacted.
 - Dota config file: `cfg/gamestate_integration/gamestate_integration_coach.cfg`
   and launch option `-gamestateintegration`.
 - Player GSI only contains the local player's hero. Full all-player data is

@@ -87,3 +87,18 @@ def test_same_name_does_not_overwrite(monkeypatch, tmp_path):
 
     names = sorted(p.name for p in tmp_path.iterdir())
     assert names == ["lion_min2_levelup.json", "lion_min2_levelup_2.json", "lion_min2_start.json"]
+
+
+def test_wrong_field_type_is_400():
+    r = client.post("/", json=payload(hero={"name": "npc_dota_hero_lion", "level": "abc"}))
+    assert r.status_code == 400
+
+
+def test_prints_items_from_real_fixture(capsys):
+    data = json.loads((main.FIXTURES_DIR / "nevermore_min1_levelup.json").read_text())
+    data["auth"] = {"token": GSI_TOKEN}
+    r = client.post("/", json=data)
+    assert r.status_code == 200
+    line = capsys.readouterr().out
+    assert "npc_dota_hero_nevermore lvl 2 gold 213" in line
+    assert "orb_of_frost, blight_stone" in line
