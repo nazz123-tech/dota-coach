@@ -8,7 +8,7 @@ delivered by voice, a web dashboard and an MCP server.
 - AI assistant context: [CLAUDE.md](CLAUDE.md)
 
 ## Status
-Phase 1 — receiving live game data with Game State Integration.
+Phase 1 (GSI receiver, fixtures, models) done. Next: Phase 2 — OpenDota data cache.
 
 ## Quick start (companion)
 ```bash
