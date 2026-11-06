@@ -24,7 +24,7 @@ Tips are delivered by voice (local TTS), a Next.js dashboard, and an MCP server.
 5. GSI receiver binds to `127.0.0.1` and checks the auth token.
 
 ## Stack
-- **Companion (local):** Python 3.12, FastAPI + uvicorn, Pydantic, httpx, pytest,
+- **Companion (local):** Python 3.12 (venv + pip, pinned `requirements*.txt`), FastAPI + uvicorn, Pydantic, httpx, pytest,
   Piper TTS, official MCP Python SDK (stdio).
 - **Cloud:** Cloudflare Workers + Durable Objects (TS) or FastAPI on Render — see
   open question in ARCHITECTURE.md. Postgres on Neon/Supabase.
@@ -35,16 +35,19 @@ Tips are delivered by voice (local TTS), a Next.js dashboard, and an MCP server.
 > Update this section as tooling is added.
 ```bash
 # companion
-uv sync                                  # install deps
-uv run uvicorn companion.main:app --host 127.0.0.1 --port 3000
-uv run pytest                            # tests (use fixtures/)
-uv run python scripts/sync_data.py       # refresh OpenDota cache after a patch
+python3 -m venv .venv                    # create env (once)
+source .venv/bin/activate                # activate (every new terminal)
+pip install -r requirements-dev.txt      # install deps (app + pytest, ruff)
+uvicorn companion.main:app --host 127.0.0.1 --port 3000
+pytest                                   # tests (use fixtures/)
+python scripts/sync_data.py              # refresh OpenDota cache after a patch
 
 # web
 cd web && npm install && npm run dev
 ```
 
 ## Conventions
+- Python: new packages go into `requirements.txt` (or `-dev`) with an exact `==` version.
 - Python: type hints everywhere, Pydantic for external data, `ruff` for lint/format.
 - TypeScript: strict mode, no `any` without a comment explaining why.
 - One rule per function in `companion/rules/`, named `rule_<what>()`, each with tests.

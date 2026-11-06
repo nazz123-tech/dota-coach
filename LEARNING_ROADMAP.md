@@ -12,7 +12,7 @@ Rough time: 8–12 weeks alongside studies (2–3 short sessions a week).
 
 **Learn**
 - Git basics: branches, commits, `.gitignore`, pushing to GitHub
-- Python virtual environments (`uv` or `python -m venv`)
+- Python virtual environments (`python -m venv` + `pip`)
 - Reading JSON and using `curl` / Postman / Bruno to call an API
 
 **Build**
@@ -21,7 +21,7 @@ Rough time: 8–12 weeks alongside studies (2–3 short sessions a week).
 - Add `CLAUDE.md` to the root
 
 **Done when**
-- `git clone` + `uv sync` (or `pip install -r requirements.txt`) works on a fresh machine
+- `git clone` + `python3 -m venv .venv` + `pip install -r requirements-dev.txt` + `pytest` works on a fresh machine
 
 ---
 

@@ -167,6 +167,8 @@ dota-coach/
 ├─ companion/            # Python
 │  ├─ gsi/ state/ data/ rules/ tips/ voice/ draft/ mcp/ relay/
 │  └─ main.py
+├─ dota_config/         # GSI .cfg to copy into the Dota folder
+├─ requirements.txt     # pinned Python deps (+ requirements-dev.txt)
 ├─ scripts/              # sync_data.py, prerender_voice.py
 ├─ data/                 # cached OpenDota data (gitignored or versioned per patch)
 ├─ fixtures/             # saved GSI payloads for tests

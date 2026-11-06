@@ -1,0 +1,4 @@
+# Dev tools on top of the app dependencies.
+-r requirements.txt
+pytest==9.2.0
+ruff==0.17.4

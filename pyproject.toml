@@ -3,16 +3,7 @@ name = "dota-coach"
 version = "0.1.0"
 description = "Live Dota 2 coaching companion"
 requires-python = ">=3.12"
-dependencies = [
-    "fastapi",
-    "uvicorn",
-    "pydantic",
-    "httpx",
-    "python-dotenv",
-]
-
-[dependency-groups]
-dev = ["pytest", "ruff"]
+# Dependencies live in requirements.txt / requirements-dev.txt (installed with pip).
 
 [tool.ruff]
 line-length = 100

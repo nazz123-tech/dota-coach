@@ -1,0 +1,8 @@
+# App dependencies, pinned to exact versions.
+# After adding a package: pip install <pkg>, then add it here with its version
+# (see `pip freeze`).
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.3
+httpx==0.28.1
+python-dotenv==1.2.4

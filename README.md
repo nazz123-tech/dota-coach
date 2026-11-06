@@ -12,9 +12,12 @@ Phase 1 — receiving live game data with Game State Integration.
 
 ## Quick start (companion)
 ```bash
-uv sync
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-dev.txt
 cp .env.example .env            # set GSI_TOKEN
-uv run uvicorn companion.main:app --host 127.0.0.1 --port 3000
+uvicorn companion.main:app --host 127.0.0.1 --port 3000
+pytest                          # run tests
 ```
 Then copy `dota_config/gamestate_integration_coach.cfg` into
 `steamapps/common/dota 2 beta/game/dota/cfg/gamestate_integration/`
