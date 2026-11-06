@@ -79,15 +79,24 @@ External: OpenDota API (synced once per patch, cached)
 
 ### 3. Data store (`companion/data`, `scripts/sync_data.py`)
 - Source: OpenDota (constants, hero item popularity, matchups, benchmarks).
-- Synced once per patch into `data/*.json` by `python -m scripts.sync_data`:
-  `heroes.json` and `items.json` keyed by GSI internal names (`npc_dota_hero_*`,
-  `item_*`), `meta.json` with the patch and sync time. Committed to git so the
-  gaming PC gets it with `git pull`.
+- Synced once per patch into `data/*.json` by `python -m scripts.sync_data`
+  (~7 min; `--constants-only` for just heroes/items/patch). Every file is keyed by
+  GSI internal names (`npc_dota_hero_*`, `item_*`):
+  - `heroes.json`, `items.json`: constants (display names, costs, components)
+  - `builds.json`: top items per phase (start/early/mid/late) per hero
+  - `matchups.json`: games and wins vs every other hero
+  - `benchmarks.json`: per-minute rates (GPM, XPM, LH, ...) by percentile
+  - `meta.json`: patch and sync time
+  Committed to git so the gaming PC gets it with `git pull`.
+- Sync is polite to the free tier (~60 req/min): one request at a time ~1.1 s
+  apart, retries on 429/5xx with back-off, a failed hero keeps its old data.
 - `companion/data/transform.py` (pure: raw OpenDota → cache format) and
   `companion/data/store.py` (`DataStore`: load/save + lookups).
 - Runtime: zero network calls during a match.
-- Interface: `get_build(hero)`, `get_skill_order(hero)`, `get_matchups(hero)`,
-  `get_benchmark(hero, minute)`.
+- Interface: `get_build(hero)`, `get_matchups(hero)`,
+  `get_benchmark(hero, minute, percentile=0.5)` (rate × minutes, approximate).
+  `get_skill_order(hero)` is still open: OpenDota has no simple skill-build
+  endpoint (see Open questions).
 
 ### 4. Rule engine (`companion/rules`)
 - Each rule: `def rule(state, diff, data) -> list[Tip]` — pure, no I/O.
@@ -188,6 +197,8 @@ dota-coach/
 ```
 
 ## Open questions
+- Skill-order source for `get_skill_order`: OpenDota has no aggregate endpoint;
+  options are parsed public matches or a hand-written order per hero.
 - Does player-side GSI include enemy picks during hero selection? (Verify in Phase 6.)
 - Cloudflare Durable Objects (TS) vs FastAPI on Render (Python) for the relay.
 - Packaging: PyInstaller vs Tauri wrapper.
