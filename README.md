@@ -24,6 +24,8 @@ Then copy `dota_config/gamestate_integration_coach.cfg` into
 (use the same token) and add `-gamestateintegration` to Dota 2's launch options.
 
 Set `SAVE_FIXTURES=1` in `.env` to record real payloads into `fixtures/`.
+Only interesting moments are saved (game start, new minute, level up, death,
+item change), with names like `lion_min12_levelup.json`.
 
 ## Fair play
 Only the local player's official GSI data and public aggregate stats are used.
