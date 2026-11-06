@@ -8,6 +8,9 @@ Refresh the cache after a patch with:  python -m scripts.sync_data
 import json
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any
+
+from pydantic import BaseModel
 
 from companion.data.transform import HeroInfo, ItemInfo
 
@@ -27,37 +30,23 @@ class DataStore:
     @classmethod
     def load(cls, data_dir: Path) -> "DataStore":
         """Load the cache from data_dir. Raises a clear error if it was never synced."""
-        heroes_path = data_dir / HEROES_FILE
-        if not heroes_path.exists():
+        if not (data_dir / HEROES_FILE).exists():
             raise FileNotFoundError(
                 f"No cached data in {data_dir}. Run: python -m scripts.sync_data"
             )
-        heroes_raw = json.loads(heroes_path.read_text(encoding="utf-8"))
-        items_raw = json.loads((data_dir / ITEMS_FILE).read_text(encoding="utf-8"))
-        meta = json.loads((data_dir / META_FILE).read_text(encoding="utf-8"))
         return cls(
-            heroes={k: HeroInfo.model_validate(v) for k, v in heroes_raw.items()},
-            items={k: ItemInfo.model_validate(v) for k, v in items_raw.items()},
-            patch=meta["patch"],
+            heroes=_read_models(data_dir / HEROES_FILE, HeroInfo),
+            items=_read_models(data_dir / ITEMS_FILE, ItemInfo),
+            patch=_read_json(data_dir / META_FILE)["patch"],
         )
 
-    @staticmethod
-    def save(
-        data_dir: Path, heroes: dict[str, HeroInfo], items: dict[str, ItemInfo], patch: str
-    ) -> None:
+    def save(self, data_dir: Path) -> None:
         """Write the cache. Keys are sorted so git diffs after a patch are readable."""
         data_dir.mkdir(parents=True, exist_ok=True)
-
-        def write(name: str, data: object) -> None:
-            text = json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False)
-            (data_dir / name).write_text(text + "\n", encoding="utf-8")
-
-        write(HEROES_FILE, {k: v.model_dump() for k, v in heroes.items()})
-        write(ITEMS_FILE, {k: v.model_dump() for k, v in items.items()})
-        write(
-            META_FILE,
-            {"patch": patch, "synced_at": datetime.now(UTC).isoformat(timespec="seconds")},
-        )
+        _write_models(data_dir / HEROES_FILE, self.heroes)
+        _write_models(data_dir / ITEMS_FILE, self.items)
+        synced_at = datetime.now(UTC).isoformat(timespec="seconds")
+        _write_json(data_dir / META_FILE, {"patch": self.patch, "synced_at": synced_at})
 
     # --- lookups (use GSI internal names) ---
 
@@ -80,3 +69,24 @@ class DataStore:
     def item_cost(self, internal_name: str) -> int | None:
         item = self.item(internal_name)
         return item.cost if item else None
+
+
+# --- small JSON helpers, shared by load() and save() ---
+
+
+def _read_json(path: Path) -> Any:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _write_json(path: Path, data: Any) -> None:
+    text = json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False)
+    path.write_text(text + "\n", encoding="utf-8")
+
+
+def _read_models[M: BaseModel](path: Path, model: type[M]) -> dict[str, M]:
+    """Read a {key: {...}} JSON file into {key: model}."""
+    return {key: model.model_validate(value) for key, value in _read_json(path).items()}
+
+
+def _write_models(path: Path, models: dict[str, BaseModel]) -> None:
+    _write_json(path, {key: value.model_dump() for key, value in models.items()})

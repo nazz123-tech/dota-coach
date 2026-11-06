@@ -36,7 +36,7 @@ async def main() -> None:
     heroes = heroes_from_opendota(heroes_raw)
     items = items_from_opendota(items_raw)
     patch = latest_patch(patch_raw)
-    DataStore.save(DATA_DIR, heroes=heroes, items=items, patch=patch)
+    DataStore(heroes=heroes, items=items, patch=patch).save(DATA_DIR)
     print(f"Saved {len(heroes)} heroes and {len(items)} items for patch {patch} to {DATA_DIR}")
 
 
