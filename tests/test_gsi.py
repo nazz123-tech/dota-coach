@@ -24,11 +24,21 @@ def payload(**overrides):
 def reset_last_payload(monkeypatch):
     # The receiver remembers the previous tick; start each test fresh.
     monkeypatch.setattr(main, "_last_payload", None)
+    monkeypatch.setattr(main, "_warned_bad_token", False)
 
 
 def test_rejects_bad_token():
     r = client.post("/", json={"auth": {"token": "wrong"}})
     assert r.status_code == 401
+
+
+def test_bad_token_warns_once_with_placeholder_hint(caplog):
+    caplog.set_level("WARNING", logger="uvicorn.error")
+    for _ in range(3):
+        client.post("/", json={"auth": {"token": "GSI_TOKEN"}, "map": {"clock_time": 1}})
+    warnings = [r.getMessage() for r in caplog.records if "Rejected payload" in r.getMessage()]
+    assert len(warnings) == 1
+    assert "placeholder 'GSI_TOKEN'" in warnings[0]
 
 
 def test_rejects_non_string_token():

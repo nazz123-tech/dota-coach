@@ -15,18 +15,37 @@ from fastapi import FastAPI, HTTPException, Request
 
 from companion.gsi.recorder import fixture_name, save_reason
 
-load_dotenv()
 logger = logging.getLogger("uvicorn.error")  # shows up in uvicorn's console output
 
-DEFAULT_TOKEN = "change-me"
-GSI_TOKEN = os.getenv("GSI_TOKEN", DEFAULT_TOKEN)
-SAVE_FIXTURES = os.getenv("SAVE_FIXTURES") == "1"
-# Absolute path based on this file's location, so it works no matter which
-# folder you start the server from.
-FIXTURES_DIR = Path(__file__).resolve().parent.parent / "fixtures"
+# Paths based on this file's location, so they work no matter which folder you
+# start the server from.
+PROJECT_DIR = Path(__file__).resolve().parent.parent
+ENV_FILE = PROJECT_DIR / ".env"
+FIXTURES_DIR = PROJECT_DIR / "fixtures"
 
+load_dotenv(ENV_FILE)
+
+DEFAULT_TOKEN = "change-me"
+GSI_TOKEN = os.getenv("GSI_TOKEN", DEFAULT_TOKEN).strip()
+# Accept "1", "true", "yes" (any case, extra spaces ignored).
+SAVE_FIXTURES = os.getenv("SAVE_FIXTURES", "").strip().lower() in {"1", "true", "yes"}
+
+# Startup report: makes setup problems visible right away.
+if ENV_FILE.exists():
+    logger.info(".env loaded from %s", ENV_FILE)
+elif (PROJECT_DIR / ".env.txt").exists():
+    logger.warning("Found .env.txt but not .env -- rename it: mv .env.txt .env")
+else:
+    logger.warning("No .env file in %s -- copy .env.example to .env", PROJECT_DIR)
 if GSI_TOKEN == DEFAULT_TOKEN:
     logger.warning("GSI_TOKEN is still '%s'. Set your own token in .env.", DEFAULT_TOKEN)
+if SAVE_FIXTURES:
+    logger.info("Fixture saving: ON -> %s", FIXTURES_DIR)
+else:
+    logger.info("Fixture saving: OFF (set SAVE_FIXTURES=1 in .env to turn on)")
+
+# Set after the first rejected payload, so the hint below prints once, not 10x/second.
+_warned_bad_token = False
 
 app = FastAPI(title="Dota Coach companion")
 
@@ -55,7 +74,7 @@ def _save_fixture(payload: dict[str, Any], reason: str) -> None:
 
 @app.post("/")
 async def receive_gsi(request: Request) -> dict[str, bool]:
-    global _last_payload
+    global _last_payload, _warned_bad_token
 
     try:
         payload = await request.json()
@@ -65,6 +84,19 @@ async def receive_gsi(request: Request) -> dict[str, bool]:
         raise HTTPException(status_code=400, detail="expected a JSON object")
 
     if not _token_ok(payload):
+        if not _warned_bad_token:
+            _warned_bad_token = True
+            sent = payload.get("auth", {}).get("token")
+            hint = (
+                " Dota sent the placeholder 'GSI_TOKEN' -- put your real token in the .cfg"
+                " inside the Dota folder, then restart Dota."
+                if sent == "GSI_TOKEN"
+                else ""
+            )
+            logger.warning(
+                "Rejected payload: token in the Dota .cfg doesn't match GSI_TOKEN in .env.%s",
+                hint,
+            )
         raise HTTPException(status_code=401, detail="bad token")
 
     game_map = payload.get("map", {})
