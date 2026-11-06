@@ -74,6 +74,7 @@ def test_saves_fixtures_only_on_events(monkeypatch, tmp_path):
     assert names == ["lion_min2_start.json", "lion_min3_newminute.json"]
     saved = json.loads((tmp_path / "lion_min3_newminute.json").read_text())
     assert saved["map"]["clock_time"] == 180
+    assert "auth" not in saved  # the token must never end up in a fixture
 
 
 def test_same_name_does_not_overwrite(monkeypatch, tmp_path):

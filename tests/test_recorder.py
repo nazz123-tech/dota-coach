@@ -1,4 +1,4 @@
-from companion.gsi.recorder import fixture_name, save_reason
+from companion.gsi.recorder import clean_for_fixture, fixture_name, save_reason
 
 
 def make(clock=120, level=3, deaths=0, items=("item_tango",), hero="npc_dota_hero_lion"):
@@ -61,3 +61,27 @@ def test_fixture_name():
 
 def test_fixture_name_pregame():
     assert fixture_name(make(clock=-30), "start") == "lion_min0_start"
+
+
+def test_clean_for_fixture_removes_token():
+    payload = {"auth": {"token": "secret"}, "map": {"clock_time": 1}}
+    cleaned = clean_for_fixture(payload)
+    assert "auth" not in cleaned
+    assert cleaned["map"] == {"clock_time": 1}
+    assert payload["auth"] == {"token": "secret"}  # original left untouched
+
+
+def test_clean_for_fixture_blanks_personal_info():
+    payload = {
+        "player": {"steamid": "765611", "accountid": "123", "name": "Me", "gold": 600},
+        "previously": {"player": {"name": "OldName", "gold": 500}},
+    }
+    cleaned = clean_for_fixture(payload)
+    assert cleaned["player"] == {
+        "steamid": "<redacted>",
+        "accountid": "<redacted>",
+        "name": "<redacted>",
+        "gold": 600,
+    }
+    assert cleaned["previously"]["player"] == {"name": "<redacted>", "gold": 500}
+    assert payload["player"]["name"] == "Me"  # original left untouched

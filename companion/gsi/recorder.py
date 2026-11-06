@@ -48,3 +48,30 @@ def fixture_name(payload: Payload, reason: str) -> str:
     hero = payload.get("hero", {}).get("name", "unknown")
     hero = hero.removeprefix("npc_dota_hero_")
     return f"{hero}_min{_minute(payload)}_{reason}"
+
+
+# Personal fields we never want in a committed fixture. Rules don't need them.
+PERSONAL_PLAYER_FIELDS = ("steamid", "accountid", "name")
+REDACTED = "<redacted>"
+
+
+def _redact_player(player: Any) -> Any:
+    if not isinstance(player, dict):
+        return player
+    return {k: (REDACTED if k in PERSONAL_PLAYER_FIELDS else v) for k, v in player.items()}
+
+
+def clean_for_fixture(payload: Payload) -> Payload:
+    """Copy of the payload that is safe to save and commit (repo is public).
+
+    - drops the `auth` block so the GSI token never ends up in a fixture file
+    - replaces Steam ID, account ID and player name with "<redacted>",
+      also inside Dota's `previously` / `added` change blocks
+    """
+    cleaned = {key: value for key, value in payload.items() if key != "auth"}
+    if "player" in cleaned:
+        cleaned["player"] = _redact_player(cleaned["player"])
+    for block in ("previously", "added"):
+        if isinstance(cleaned.get(block), dict) and "player" in cleaned[block]:
+            cleaned[block] = {**cleaned[block], "player": _redact_player(cleaned[block]["player"])}
+    return cleaned

@@ -21,9 +21,9 @@
     "ward_purchase_cooldown": 0
   },
   "player": {
-    "steamid": "76561198961387516",
-    "accountid": "1001121788",
-    "name": "\u043c\u0430\u043a\u0430\u043d \u043a\u043b\u043e\u0443\u043d",
+    "steamid": "<redacted>",
+    "accountid": "<redacted>",
+    "name": "<redacted>",
     "activity": "playing",
     "kills": 1,
     "deaths": 0,
@@ -334,8 +334,5 @@
         "passive": true
       }
     }
-  },
-  "auth": {
-    "token": "1234567890abcdef"
   }
 }

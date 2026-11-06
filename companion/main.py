@@ -13,7 +13,7 @@ from typing import Any
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
 
-from companion.gsi.recorder import fixture_name, save_reason
+from companion.gsi.recorder import clean_for_fixture, fixture_name, save_reason
 
 logger = logging.getLogger("uvicorn.error")  # shows up in uvicorn's console output
 
@@ -68,7 +68,7 @@ def _save_fixture(payload: dict[str, Any], reason: str) -> None:
     while path.exists():  # never overwrite: lion_min2_levelup_2.json, _3, ...
         path = FIXTURES_DIR / f"{base}_{n}.json"
         n += 1
-    path.write_text(json.dumps(payload, indent=2))
+    path.write_text(json.dumps(clean_for_fixture(payload), indent=2))
     logger.info("saved fixture %s", path.name)
 
 
