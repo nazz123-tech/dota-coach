@@ -40,7 +40,8 @@ source .venv/bin/activate                # activate (every new terminal)
 pip install -r requirements-dev.txt      # install deps (app + pytest, ruff)
 uvicorn companion.main:app --host 127.0.0.1 --port 3000
 pytest                                   # tests (use fixtures/)
-python -m scripts.sync_data              # refresh OpenDota cache after a patch
+python -m scripts.sync_data              # refresh OpenDota cache after a patch (~7 min)
+python -m scripts.sync_data --constants-only  # just heroes/items/patch
 
 # web
 cd web && npm install && npm run dev
@@ -64,6 +65,11 @@ cd web && npm install && npm run dev
 2. Write or update tests first for rules and parsers.
 3. Keep the hot path (GSI → tips → voice) non-blocking.
 4. If a change affects the architecture, update `ARCHITECTURE.md` in the same commit.
+5. Never commit to `main`. Work on a feature branch (`feat/...`, `fix/...`), make small
+   commits with clear messages, run `pytest` and `ruff`, then open a pull request.
+   The PR describes the changes per commit, includes the test results, and lists any
+   manual steps for the gaming PC (Windows, runs Dota) or the Mac (dev machine).
+   The developer reviews and merges.
 
 ## Out of scope
 - Custom ML models, memory reading, opponent scouting, overlays drawn into the game.
