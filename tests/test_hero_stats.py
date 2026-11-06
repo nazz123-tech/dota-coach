@@ -107,3 +107,62 @@ def test_benchmark_uses_nearest_percentile():
 def test_benchmark_without_data_is_none():
     bench = benchmarks_from_opendota({"result": {}})
     assert bench.gold_per_min.at(0.5) is None
+
+
+# --- DataStore lookups: get_build / get_matchups / get_benchmark ---
+
+
+@pytest.fixture
+def store(tmp_path, constants, item_ids, hero_ids) -> DataStore:
+    """Save Doom's stats to a temp cache and load it back (like the real app)."""
+    DataStore(
+        heroes=constants.heroes,
+        items=constants.items,
+        patch=constants.patch,
+        builds={DOOM: build_from_opendota(sample("doom_item_popularity.json"), item_ids)},
+        matchups={DOOM: matchups_from_opendota(sample("doom_matchups.json"), hero_ids)},
+        benchmarks={DOOM: benchmarks_from_opendota(sample("doom_benchmarks.json"))},
+    ).save(tmp_path)
+    return DataStore.load(tmp_path)
+
+
+def test_get_build(store):
+    build = store.get_build(DOOM)
+    assert build is not None
+    assert build.mid_game[0].item == "item_blink"
+
+
+def test_get_matchups(store):
+    matchups = store.get_matchups(DOOM)
+    assert matchups[0].hero == "npc_dota_hero_rubick"
+    assert len(matchups) == 126
+
+
+def test_get_benchmark_expected_totals_at_minute(store):
+    bench = store.get_benchmark(DOOM, minute=10)
+    assert bench is not None
+    assert bench.minute == 10
+    assert bench.gold == 5300  # median 530 GPM x 10 minutes
+    assert bench.last_hits == 49  # 4.86 LH/min x 10, rounded
+
+
+def test_get_benchmark_other_percentile(store):
+    top = store.get_benchmark(DOOM, minute=10, percentile=0.9)
+    median = store.get_benchmark(DOOM, minute=10)
+    assert top is not None and median is not None
+    assert top.gold > median.gold
+
+
+def test_unknown_hero_has_no_stats(store):
+    assert store.get_build("npc_dota_hero_new_guy") is None
+    assert store.get_matchups("npc_dota_hero_new_guy") == []
+    assert store.get_benchmark("npc_dota_hero_new_guy", minute=10) is None
+
+
+def test_cache_without_hero_stats_still_loads(tmp_path, constants):
+    # e.g. after `sync_data --constants-only`: lookups just return nothing.
+    DataStore(heroes=constants.heroes, items=constants.items, patch="7.41").save(tmp_path)
+    for name in ("builds.json", "matchups.json", "benchmarks.json"):
+        (tmp_path / name).unlink(missing_ok=True)
+    store = DataStore.load(tmp_path)
+    assert store.get_build(DOOM) is None
