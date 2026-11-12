@@ -53,12 +53,11 @@ def test_latest_patch():
 
 @pytest.fixture
 def store(tmp_path) -> DataStore:
-    DataStore.save(
-        tmp_path,
+    DataStore(
         heroes=heroes_from_opendota(sample("heroes_sample.json")),
         items=items_from_opendota(sample("items_sample.json")),
         patch="7.41",
-    )
+    ).save(tmp_path)
     return DataStore.load(tmp_path)
 
 

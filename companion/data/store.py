@@ -8,58 +8,78 @@ Refresh the cache after a patch with:  python -m scripts.sync_data
 import json
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any
 
-from companion.data.transform import HeroInfo, ItemInfo
+from pydantic import BaseModel, TypeAdapter
 
-HEROES_FILE = "heroes.json"
-ITEMS_FILE = "items.json"
+from companion.data.transform import HeroBenchmarks, HeroBuild, HeroInfo, ItemInfo, Matchup
+
+# One JSON file per kind of data, each keyed by internal name.
+# TypeAdapter lets Pydantic read/write a whole {name: model} dict in one go.
+FILES: dict[str, tuple[str, TypeAdapter[Any]]] = {
+    "heroes": ("heroes.json", TypeAdapter(dict[str, HeroInfo])),
+    "items": ("items.json", TypeAdapter(dict[str, ItemInfo])),
+    "builds": ("builds.json", TypeAdapter(dict[str, HeroBuild])),
+    "matchups": ("matchups.json", TypeAdapter(dict[str, list[Matchup]])),
+    "benchmarks": ("benchmarks.json", TypeAdapter(dict[str, HeroBenchmarks])),
+}
 META_FILE = "meta.json"
 
 
+class Benchmark(BaseModel):
+    """What a player at `percentile` typically has by `minute` on this hero."""
+
+    minute: int
+    percentile: float
+    gold: int
+    xp: int
+    last_hits: int
+    denies: int
+
+
 class DataStore:
-    def __init__(self, heroes: dict[str, HeroInfo], items: dict[str, ItemInfo], patch: str):
+    def __init__(
+        self,
+        heroes: dict[str, HeroInfo],
+        items: dict[str, ItemInfo],
+        patch: str,
+        builds: dict[str, HeroBuild] | None = None,
+        matchups: dict[str, list[Matchup]] | None = None,
+        benchmarks: dict[str, HeroBenchmarks] | None = None,
+    ):
         self.heroes = heroes
         self.items = items
         self.patch = patch
+        self.builds = builds or {}
+        self.matchups = matchups or {}
+        self.benchmarks = benchmarks or {}
 
     # --- loading and saving ---
 
     @classmethod
     def load(cls, data_dir: Path) -> "DataStore":
-        """Load the cache from data_dir. Raises a clear error if it was never synced."""
-        heroes_path = data_dir / HEROES_FILE
-        if not heroes_path.exists():
+        """Load the cache from data_dir. Raises a clear error if it was never synced.
+        Per-hero stats files are optional (e.g. after a --constants-only sync)."""
+        if not (data_dir / FILES["heroes"][0]).exists():
             raise FileNotFoundError(
                 f"No cached data in {data_dir}. Run: python -m scripts.sync_data"
             )
-        heroes_raw = json.loads(heroes_path.read_text(encoding="utf-8"))
-        items_raw = json.loads((data_dir / ITEMS_FILE).read_text(encoding="utf-8"))
+        loaded: dict[str, Any] = {}
+        for key, (filename, adapter) in FILES.items():
+            path = data_dir / filename
+            loaded[key] = adapter.validate_json(path.read_bytes()) if path.exists() else {}
         meta = json.loads((data_dir / META_FILE).read_text(encoding="utf-8"))
-        return cls(
-            heroes={k: HeroInfo.model_validate(v) for k, v in heroes_raw.items()},
-            items={k: ItemInfo.model_validate(v) for k, v in items_raw.items()},
-            patch=meta["patch"],
-        )
+        return cls(patch=meta["patch"], **loaded)
 
-    @staticmethod
-    def save(
-        data_dir: Path, heroes: dict[str, HeroInfo], items: dict[str, ItemInfo], patch: str
-    ) -> None:
+    def save(self, data_dir: Path) -> None:
         """Write the cache. Keys are sorted so git diffs after a patch are readable."""
         data_dir.mkdir(parents=True, exist_ok=True)
+        for key, (filename, adapter) in FILES.items():
+            _write_json(data_dir / filename, adapter.dump_python(getattr(self, key), mode="json"))
+        synced_at = datetime.now(UTC).isoformat(timespec="seconds")
+        _write_json(data_dir / META_FILE, {"patch": self.patch, "synced_at": synced_at})
 
-        def write(name: str, data: object) -> None:
-            text = json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False)
-            (data_dir / name).write_text(text + "\n", encoding="utf-8")
-
-        write(HEROES_FILE, {k: v.model_dump() for k, v in heroes.items()})
-        write(ITEMS_FILE, {k: v.model_dump() for k, v in items.items()})
-        write(
-            META_FILE,
-            {"patch": patch, "synced_at": datetime.now(UTC).isoformat(timespec="seconds")},
-        )
-
-    # --- lookups (use GSI internal names) ---
+    # --- constants lookups (use GSI internal names) ---
 
     def hero(self, internal_name: str) -> HeroInfo | None:
         return self.heroes.get(internal_name)
@@ -80,3 +100,38 @@ class DataStore:
     def item_cost(self, internal_name: str) -> int | None:
         item = self.item(internal_name)
         return item.cost if item else None
+
+    # --- per-hero stats ---
+
+    def get_build(self, hero: str) -> HeroBuild | None:
+        """Most popular items per game phase for this hero."""
+        return self.builds.get(hero)
+
+    def get_matchups(self, hero: str) -> list[Matchup]:
+        """Results vs every other hero, most games first. Empty if unknown."""
+        return self.matchups.get(hero, [])
+
+    def get_benchmark(self, hero: str, minute: int, percentile: float = 0.5) -> Benchmark | None:
+        """Expected totals at `minute` for a player at `percentile` (0.5 = median).
+
+        OpenDota gives per-minute rates (e.g. 530 GPM); we multiply by minutes.
+        It's an approximation: real farm is slower early and faster later.
+        """
+        bench = self.benchmarks.get(hero)
+        if bench is None:
+            return None
+        rates = {
+            "gold": bench.gold_per_min.at(percentile),
+            "xp": bench.xp_per_min.at(percentile),
+            "last_hits": bench.last_hits_per_min.at(percentile),
+            "denies": bench.denies_per_min.at(percentile),
+        }
+        if any(rate is None for rate in rates.values()):
+            return None
+        totals = {name: round(rate * minute) for name, rate in rates.items() if rate is not None}
+        return Benchmark(minute=minute, percentile=percentile, **totals)
+
+
+def _write_json(path: Path, data: Any) -> None:
+    text = json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False)
+    path.write_text(text + "\n", encoding="utf-8")
